@@ -1,0 +1,19 @@
+# Creator-only filenames (basenames) that must NEVER appear under participant/.
+# The scanner fails if any file with one of these basenames is found in the bundle.
+# These are build inputs or answer keys; players recover their own equivalents by solving.
+pw.txt
+keyblock.txt
+aeskey.bin
+aeskey_rec.bin
+passwords.txt
+passwords.dec
+qtbl_stego.py
+secret_bundle.zip
+Flag.txt
+Flag 2.txt
+flag.txt
+WRITEUP.md
+HINT_LADDER.md
+PROVENANCE.md
+solve_test.sh
+rebuild.sh

@@ -1,0 +1,22 @@
+# Secret denylist — forbidden strings in the participant/ bundle.
+# One entry per line. Blank lines and lines starting with '#' are ignored.
+# The scanner (build/secret-scan/scan.sh) fails if ANY of these appears anywhere
+# under participant/ (with the allowlisted exceptions in allowlist.txt).
+#
+# Categories: final flags, creator-only passwords, four-square plaintext.
+# Rationale for each is in build/DIRECTORY_CONTRACT.md.
+
+# --- Final flags (the answers) ---
+Flag{H0NeyB4d6er10OKinG0OD!!!}
+Flag{DanG 7hat'S @ cUTe HOnEY b@D9eR}
+Flag{Y0u haVe EnCouNTeR3d a w!Ld s1eEP p@RA1y$!S DEm0n}
+
+# --- Challenge 4 strong payload password (must never ship) ---
+L35f#t8w2&(X$MK8:
+
+# --- Four-square PLAINTEXT answers (ciphertext is allowed; plaintext is not) ---
+TOMHANKSAINTGOTSHITONME
+TOM HANKS AINT GOT SHIT ON ME
+
+# --- Creator-only key material (raw contents, not filenames) ---
+QZFCUPBAFMCKZSHSKOSQURRJPAXUFABOGAZEJEQANIZEYABOUPNAHLNSIBESOLTUEBUPDNEY

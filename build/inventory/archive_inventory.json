@@ -1,0 +1,1971 @@
+{
+  "summary": {
+    "archive_dir": "/Users/jdtherobot/Documents/GitHub/CTF Challenges/archive",
+    "file_count": 280,
+    "unique_sha256": 85,
+    "duplicate_groups": 61,
+    "total_bytes": 158586716
+  },
+  "files": [
+    {
+      "path": ".DS_Store",
+      "size": 6148,
+      "mtime": 1784503100,
+      "sha256": "10ab6ec764881c135de177ef64affbf52aa6442cf42c90c5718a5186cd3711b5",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "CTF Stego.md",
+      "size": 7409,
+      "mtime": 1759015278,
+      "sha256": "a6279589aa2e61babe363dbea50da0e8f014ce3db647aa311434b99bbe7faf38",
+      "type": "Unicode text, UTF-8 text"
+    },
+    {
+      "path": "Kali Virtual Box Files/.DS_Store",
+      "size": 6148,
+      "mtime": 1784503071,
+      "sha256": "f2bb4b56ac9a0f1080e0e70277a19ceb1063b7578e1d4c510b9a20f370b67255",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "Kali Virtual Box Files/documents/rockyou.txt",
+      "size": 139921507,
+      "mtime": 1759601160,
+      "sha256": "16035fea7742cb0561c513de1d946eda5716d7de294e6c732449740096686173",
+      "type": "Unicode text, UTF-8 text"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/.DS_Store",
+      "size": 6148,
+      "mtime": 1784503068,
+      "sha256": "b617bca20845ee284e21ad8a3ed1ab84a899304ed3de83a43d573294013d1f7d",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/Honey.jpeg",
+      "size": 277286,
+      "mtime": 1759601518,
+      "sha256": "99bf3bce5d48b3803a68fb1c71df2282f279a760780c8537840211173d332b35",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/_Honey.jpeg-0.extracted/3C4A6.zip",
+      "size": 30336,
+      "mtime": 1759601924,
+      "sha256": "861b876b9acc2076dde94d3d929cad97cd2b6c106076b57ff81e3d7c1831b932",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/_Honey.jpeg-0.extracted/do_not_open.txt",
+      "size": 58,
+      "mtime": 1759077468,
+      "sha256": "9667580c33a2dc882a4dfa72b43753e9dc1a21ac6679d47fcccae7c08d4eeabb",
+      "type": "ASCII text"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/_Honey.jpeg.extracted/3C4A6.zip",
+      "size": 30336,
+      "mtime": 1759601680,
+      "sha256": "861b876b9acc2076dde94d3d929cad97cd2b6c106076b57ff81e3d7c1831b932",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/_Honey.jpeg.extracted/do_not_open.txt",
+      "size": 58,
+      "mtime": 1759077468,
+      "sha256": "9667580c33a2dc882a4dfa72b43753e9dc1a21ac6679d47fcccae7c08d4eeabb",
+      "type": "ASCII text"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/carve1.bin",
+      "size": 8000,
+      "mtime": 1759602040,
+      "sha256": "7701b1db76325d666797445ba103fcadebb375b1db1c78ccfcd63c1da47d2ff4",
+      "type": "data"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/carve2.bin",
+      "size": 5368,
+      "mtime": 1759602096,
+      "sha256": "82a20d781a7a40c30249e446b971ee4998c6658a2a2fb3781522c0af73b8fb32",
+      "type": "data"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/carve3.bin",
+      "size": 4128,
+      "mtime": 1759602126,
+      "sha256": "79c64dd738c612ef335ec229798f790020fd73d2c26cb60438f98b2ed9d929b7",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/carve4.bin",
+      "size": 8000,
+      "mtime": 1759602224,
+      "sha256": "f9fc1f31a4608e40f241307693688fc45cdb11607ad17dab2e228df57ea3dcad",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/carve5.bin",
+      "size": 8000,
+      "mtime": 1759602262,
+      "sha256": "dd9239d4e3f1bf14b029f36a84dfa663a3111e30bc230abae7046ec7ee72a15b",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/carve6.bin",
+      "size": 8000,
+      "mtime": 1759602294,
+      "sha256": "566f7d3ccbcfece98293ab18973de38c8a6c9fcfacb6a482b4be5e7923082a3b",
+      "type": "Zip archive data (empty)"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/carve7.bin",
+      "size": 8000,
+      "mtime": 1759602682,
+      "sha256": "e3d265926f4dbfbc7778e965d6c343b8c60173dd53c12fe25c99b2a6c3ff225b",
+      "type": "TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/pd2/email.eml",
+      "size": 102452,
+      "mtime": 1759662436,
+      "sha256": "366b8767f647cd5df0ded2384e9e0feaa61b7cc4279b822be4679c660a20ab7b",
+      "type": "news or mail text, Unicode text, UTF-8 text"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/stego_badger.jpeg",
+      "size": 130623,
+      "mtime": 1759600766,
+      "sha256": "244e2a18e488ff165d3bf5f5422cc7d4c4f5ff655c010c9ea97aad54bb6a436c",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "Kali Virtual Box Files/downloads/stego_badger.jpeg.out",
+      "size": 5063,
+      "mtime": 1759601278,
+      "sha256": "ddebc7dbefa5e11b35c066a551d9ab08addb6d39df2bc5d46e70eb14d52c11a5",
+      "type": "ASCII text"
+    },
+    {
+      "path": "macos notes/# --- settings you can change ---.pdf",
+      "size": 18060,
+      "mtime": 1784502248,
+      "sha256": "233ef4de93fddc66c3439433d83b560233c5f7091d8f7f10da0feff6e2dbe87e",
+      "type": "PDF document, version 1.3, 2 pages"
+    },
+    {
+      "path": "macos notes/CTF Exs.pdf",
+      "size": 28293,
+      "mtime": 1784502224,
+      "sha256": "3b7926404cf4c280cb35d4f805e4bbed3a7cb4622ad99aea30ba3c1ef8966c40",
+      "type": "PDF document, version 1.3, 2 pages"
+    },
+    {
+      "path": "main/.DS_Store",
+      "size": 8196,
+      "mtime": 1784503068,
+      "sha256": "aa06ae0e0852044f3f9a5fb31c41a6f1b6fe6e8822700bd141cb5621d2eae51a",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "main/CTF Stego.md",
+      "size": 8124,
+      "mtime": 1759253216,
+      "sha256": "592e2a12bcdffffc3fb6aa32b4898482b057df65125b243979d8b4adbda61d30",
+      "type": "Unicode text, UTF-8 text"
+    },
+    {
+      "path": "main/Challenge 1/.DS_Store",
+      "size": 6148,
+      "mtime": 1759064030,
+      "sha256": "c1eb838a546649df40ccddfb2f7940c8f015176e90163daaaa168a1d0cec1cf9",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "main/Challenge 1/ChatGPT Image Sep 28, 2025, 02_30_51 PM.png",
+      "size": 2167523,
+      "mtime": 1759059052,
+      "sha256": "fc1da4b6d1b6d1d77fb5f7bed2a77f50567f51aa60078bc8b2945f231dd1e9b0",
+      "type": "PNG image data, 1024 x 1024, 8-bit/color RGB, non-interlaced"
+    },
+    {
+      "path": "main/Challenge 1/Flag.enc.b64",
+      "size": 65,
+      "mtime": 1759061832,
+      "sha256": "c30ef39ff39ed68ef8767c1b5de7866444904a4e86704c161cd36abc86c200e1",
+      "type": "openssl enc'd data with salted password, base64 encoded"
+    },
+    {
+      "path": "main/Challenge 1/Flag.txt",
+      "size": 30,
+      "mtime": 1759060702,
+      "sha256": "d95e39d16dcf40a6705a49c39a6820c33dc3296896abd98d29f691002dc01e13",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 1/badger_photo.jpeg",
+      "size": 74825,
+      "mtime": 1759061926,
+      "sha256": "01c388e88a17f3b9bc4c75aa56608d749ce10bf28fc525b624e8787770c6c859",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], comment: \"U2FsdGVkX18KFhm4mZ2SwRS7J9jOm2EuecqdadiwCqDFFfA+VIKlg88xIJ/A0l+l\", baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 1/badger_photo_orig.jpg",
+      "size": 74756,
+      "mtime": 1759059296,
+      "sha256": "0b95e87084e0c55be09a1ef6d6e89e137f3d40d8278bf4c522f77b4ef920770c",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 1/email.eml",
+      "size": 102452,
+      "mtime": 1759062016,
+      "sha256": "366b8767f647cd5df0ded2384e9e0feaa61b7cc4279b822be4679c660a20ab7b",
+      "type": "news or mail text, Unicode text, UTF-8 text"
+    },
+    {
+      "path": "main/Challenge 1/emailScript.txt",
+      "size": 1484,
+      "mtime": 1759062014,
+      "sha256": "fc1d9bbc611892d2ed4398d2e04905eaa9fc1159ea931d10331cc61929571439",
+      "type": "Unicode text, UTF-8 text"
+    },
+    {
+      "path": "main/Challenge 1/email_test_1.eml",
+      "size": 102357,
+      "mtime": 1759061648,
+      "sha256": "2312ddbeaf6950cfcd1fc9b4de7e7be7094c6e8c94c5b56c0b5e79f9e9d6de58",
+      "type": "news or mail text, Unicode text, UTF-8 text"
+    },
+    {
+      "path": "main/Challenge 2/.DS_Store",
+      "size": 6148,
+      "mtime": 1759075876,
+      "sha256": "98458de963d57c267ecace4e942e000a66f05f7343566daacf37b6e497ac03bb",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "main/Challenge 2/Flag 2.txt",
+      "size": 5063,
+      "mtime": 1759073100,
+      "sha256": "ddebc7dbefa5e11b35c066a551d9ab08addb6d39df2bc5d46e70eb14d52c11a5",
+      "type": "ASCII text"
+    },
+    {
+      "path": "main/Challenge 2/Flag.txt",
+      "size": 37,
+      "mtime": 1759063360,
+      "sha256": "061f3d2d27c3b9ce8e55596494670fa93e6fa56e6f3ba76ae3b8776d0a309a74",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 2/genstring.py",
+      "size": 767,
+      "mtime": 1759073120,
+      "sha256": "3f7c850d1f498dfc2e3cc85b885b1aab9bfde0713dfc06c4201f6aafa5c45615",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 2/stego_badger.jpeg",
+      "size": 130623,
+      "mtime": 1759066640,
+      "sha256": "244e2a18e488ff165d3bf5f5422cc7d4c4f5ff655c010c9ea97aad54bb6a436c",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 2/stego_badger_orig.jpg",
+      "size": 86366,
+      "mtime": 1759063698,
+      "sha256": "a991a297f4f69cf182941a02c8f57d0e025c301dbbf53318b64dfe45287a37f9",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 2/stego_badger_orig.png",
+      "size": 1948498,
+      "mtime": 1759062720,
+      "sha256": "a32cb3b7c501fdcd30156c4bcd6ee19b7936e77946531270a66f4f3fd4cb602b",
+      "type": "PNG image data, 1024 x 1024, 8-bit/color RGB, non-interlaced"
+    },
+    {
+      "path": "main/Challenge 2/strings_py.txt",
+      "size": 5000,
+      "mtime": 1759073110,
+      "sha256": "026b5c5427c5e3de32435c70f3b6b6ee5cc593cfb84e95513188a04a4b2ce233",
+      "type": "ASCII text"
+    },
+    {
+      "path": "main/Challenge 4 copy/.DS_Store",
+      "size": 10244,
+      "mtime": 1784503068,
+      "sha256": "69c6bfdd9561359c739c7a7b47bbcd5f4883a97179d15b4414d7eb3503bee2c5",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "main/Challenge 4 copy/Honey.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 4 copy/Honey_orig.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 4 copy/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4 copy/aeskey.bin",
+      "size": 32,
+      "mtime": 1759086836,
+      "sha256": "df87e52b551ca7db42c208e10358c1b9443f59a6e9f558dc338357be844a5b7c",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4 copy/aeskey_rec.bin",
+      "size": 32,
+      "mtime": 1759090700,
+      "sha256": "df87e52b551ca7db42c208e10358c1b9443f59a6e9f558dc338357be844a5b7c",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4 copy/decoy_random.enc",
+      "size": 4128,
+      "mtime": 1759080228,
+      "sha256": "b0f3dec9a53b8c6d98704e49a7fbdd653f09ebfbbdf9b4598fdf3dff48c8df92",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4 copy/do_not_open.txt",
+      "size": 58,
+      "mtime": 1759077468,
+      "sha256": "9667580c33a2dc882a4dfa72b43753e9dc1a21ac6679d47fcccae7c08d4eeabb",
+      "type": "ASCII text"
+    },
+    {
+      "path": "main/Challenge 4 copy/flag.txt",
+      "size": 55,
+      "mtime": 1759076022,
+      "sha256": "43f9a331935218745b0f3ae6ecdede8777e04068865bb9f580ed09b1c1dcc4f8",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4 copy/inner.jpeg",
+      "size": 25731,
+      "mtime": 1759073850,
+      "sha256": "4c9b30640d360ea49c54a74e75b483481948459b3a18b2c4e526dabce1172503",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "main/Challenge 4 copy/iv.bin",
+      "size": 16,
+      "mtime": 1759088522,
+      "sha256": "c3b00604f465594b2e29853da920b79bb048eba335a9e706d76a9a54a78bf4fd",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4 copy/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4 copy/mid.zip",
+      "size": 237,
+      "mtime": 1759078224,
+      "sha256": "8b88a31d6295b74f3169e4de47ae194ef851a9e02e4f57b706ec510a8c423b26",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "main/Challenge 4 copy/nothingtoseehere.jpg",
+      "size": 25731,
+      "mtime": 1759086878,
+      "sha256": "55740bda74a285bd07147a70063d78c58ef7a24f4d3e56ab9d1d5b2c5e1dfbdf",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "main/Challenge 4 copy/passwords.dec",
+      "size": 4958,
+      "mtime": 1759090744,
+      "sha256": "d757241d45a60795bf962ee40576a842eb173e4de488275fe07b220d876a501e",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "main/Challenge 4 copy/passwords.enc",
+      "size": 4960,
+      "mtime": 1759088622,
+      "sha256": "cae85530715c3f46a8733512e0949e6f05df46326f957796b18f98b929fd2c39",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4 copy/passwords.txt",
+      "size": 4958,
+      "mtime": 1759084188,
+      "sha256": "d757241d45a60795bf962ee40576a842eb173e4de488275fe07b220d876a501e",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "main/Challenge 4 copy/payload.enc",
+      "size": 240,
+      "mtime": 1759080066,
+      "sha256": "a53eed275a35c8f5b075a83af8a294947cb6da4f8bb188ec83bcadd09fb4e882",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4 copy/payload.zip",
+      "size": 221,
+      "mtime": 1759078190,
+      "sha256": "052064dd8f77a9e155be9ae49b1628f93039822e95c163b5de9670caf87374cc",
+      "type": "Zip archive data, at least v1.0 to extract, compression method=store"
+    },
+    {
+      "path": "main/Challenge 4 copy/pw.txt",
+      "size": 50,
+      "mtime": 1759080040,
+      "sha256": "6b65808c9ccbf9228d6e6064b7c1d94d73008d08728b42a7c0d4d55f3be81140",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4 copy/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4 copy/qtbl_stego.py",
+      "size": 9353,
+      "mtime": 1759086656,
+      "sha256": "14b412fa19bb27c309d5c30e9dea40608c5ae86653b12113fcce98d552c9f3db",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4 copy/random.bin",
+      "size": 4096,
+      "mtime": 1759076724,
+      "sha256": "9dcd915d9940626716ecadc479371d8bd0e697a6b58c07508662c8f036125e2b",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4 copy/recovered_bundle/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4 copy/recovered_bundle/iv.bin",
+      "size": 16,
+      "mtime": 1759088522,
+      "sha256": "c3b00604f465594b2e29853da920b79bb048eba335a9e706d76a9a54a78bf4fd",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4 copy/recovered_bundle/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4 copy/recovered_bundle/passwords.enc",
+      "size": 4960,
+      "mtime": 1759088622,
+      "sha256": "cae85530715c3f46a8733512e0949e6f05df46326f957796b18f98b929fd2c39",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4 copy/recovered_bundle/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4 copy/secret.enc",
+      "size": 11008,
+      "mtime": 1759090050,
+      "sha256": "4f56b6b2199cc90c414aaccdf32febac2a989d349e26e7e8f8cef1127adff1eb",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4 copy/secret.txt",
+      "size": 21,
+      "mtime": 1759076222,
+      "sha256": "e8d488a1901b5a157c7b56795c73e4320e1cc4c2b6100d10a949b187842601f7",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4 copy/secret_bundle.ok.zip",
+      "size": 10991,
+      "mtime": 1759090512,
+      "sha256": "b826d2632902159bad8d601d131268ef16d2d5fff59f9e07cff4785d29c16e6a",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "main/Challenge 4 copy/secret_bundle.zip",
+      "size": 10991,
+      "mtime": 1759089650,
+      "sha256": "b826d2632902159bad8d601d131268ef16d2d5fff59f9e07cff4785d29c16e6a",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "main/Challenge 4/.DS_Store",
+      "size": 10244,
+      "mtime": 1784503068,
+      "sha256": "8ddd8e781dbb755721f284184d217fde1969d01af773de9391c743b3e545c989",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "main/Challenge 4/Archive/.DS_Store",
+      "size": 6148,
+      "mtime": 1759088732,
+      "sha256": "2b866cbc9a38bb868f6cecffb11d98eae63b975dce347c4519d47680645e6e6c",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "main/Challenge 4/Archive/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/Archive/inner2.jpeg",
+      "size": 25731,
+      "mtime": 1759081778,
+      "sha256": "4c9b30640d360ea49c54a74e75b483481948459b3a18b2c4e526dabce1172503",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "main/Challenge 4/Archive/key_oneline.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/Archive/qtbl.py",
+      "size": 8091,
+      "mtime": 1759082788,
+      "sha256": "15902415783b7c9ac6fb0376c2bc33ea6aab42fc4521830a7b7ad4c8ad3e1bff",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4/Archive/qtbl_stego_1.py",
+      "size": 8791,
+      "mtime": 1759086632,
+      "sha256": "1e453953ea5f1f86fdffc844f68591d5bdf48b8cc5c365addee10d0505d7b04d",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4/Archive/secret.enc",
+      "size": 5664,
+      "mtime": 1759083246,
+      "sha256": "7262788b0b21dae64424d1a13c73cca74917b46f4809d2747a5c72cafb18ba11",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4/Archive/secret.zip",
+      "size": 5636,
+      "mtime": 1759082966,
+      "sha256": "0ef4b6485a6cd554a83c711a8ba9c2480785563850012bbd0b4f18e3a7a9fa57",
+      "type": "Zip archive data, at least v1.0 to extract, compression method=store"
+    },
+    {
+      "path": "main/Challenge 4/Archive/secret/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/Archive/secret/qtbl.py",
+      "size": 8091,
+      "mtime": 1759082788,
+      "sha256": "15902415783b7c9ac6fb0376c2bc33ea6aab42fc4521830a7b7ad4c8ad3e1bff",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4/Archive/secret/secret.txt",
+      "size": 21,
+      "mtime": 1759076222,
+      "sha256": "e8d488a1901b5a157c7b56795c73e4320e1cc4c2b6100d10a949b187842601f7",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/Archive/seed.txt",
+      "size": 32,
+      "mtime": 1759086048,
+      "sha256": "d51df962422708dcbfef5762157cdfe9ba7fc70476df6af7eb7dd89e476c1cdd",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/ChatGPT Image Sep 28, 2025, 07_02_20 PM.png",
+      "size": 2139027,
+      "mtime": 1759075340,
+      "sha256": "fc79b396a92f7b0bb19f93b0870d2123c7161ed4995e6043036ae1595f299091",
+      "type": "PNG image data, 1024 x 1024, 8-bit/color RGB, non-interlaced"
+    },
+    {
+      "path": "main/Challenge 4/Honey.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 4/Honey_orig.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 4/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/aeskey.bin",
+      "size": 32,
+      "mtime": 1759086836,
+      "sha256": "df87e52b551ca7db42c208e10358c1b9443f59a6e9f558dc338357be844a5b7c",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4/decoy_random.enc",
+      "size": 4128,
+      "mtime": 1759080228,
+      "sha256": "b0f3dec9a53b8c6d98704e49a7fbdd653f09ebfbbdf9b4598fdf3dff48c8df92",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4/do_not_open.txt",
+      "size": 58,
+      "mtime": 1759077468,
+      "sha256": "9667580c33a2dc882a4dfa72b43753e9dc1a21ac6679d47fcccae7c08d4eeabb",
+      "type": "ASCII text"
+    },
+    {
+      "path": "main/Challenge 4/flag.txt",
+      "size": 55,
+      "mtime": 1759076022,
+      "sha256": "43f9a331935218745b0f3ae6ecdede8777e04068865bb9f580ed09b1c1dcc4f8",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/inner.jpeg",
+      "size": 25731,
+      "mtime": 1759073850,
+      "sha256": "4c9b30640d360ea49c54a74e75b483481948459b3a18b2c4e526dabce1172503",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "main/Challenge 4/iv.bin",
+      "size": 16,
+      "mtime": 1759088522,
+      "sha256": "c3b00604f465594b2e29853da920b79bb048eba335a9e706d76a9a54a78bf4fd",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/mid.zip",
+      "size": 237,
+      "mtime": 1759078224,
+      "sha256": "8b88a31d6295b74f3169e4de47ae194ef851a9e02e4f57b706ec510a8c423b26",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "main/Challenge 4/nothingtoseehere.jpg",
+      "size": 25731,
+      "mtime": 1759086878,
+      "sha256": "55740bda74a285bd07147a70063d78c58ef7a24f4d3e56ab9d1d5b2c5e1dfbdf",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "main/Challenge 4/passwords.enc",
+      "size": 4960,
+      "mtime": 1759088622,
+      "sha256": "cae85530715c3f46a8733512e0949e6f05df46326f957796b18f98b929fd2c39",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4/passwords.txt",
+      "size": 4958,
+      "mtime": 1759154504,
+      "sha256": "83fe8dea1b1332f8fd3589333be0f195624bb801b074f9b2773156961abc19f4",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "main/Challenge 4/payload.enc",
+      "size": 240,
+      "mtime": 1759080066,
+      "sha256": "a53eed275a35c8f5b075a83af8a294947cb6da4f8bb188ec83bcadd09fb4e882",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4/payload.zip",
+      "size": 221,
+      "mtime": 1759078190,
+      "sha256": "052064dd8f77a9e155be9ae49b1628f93039822e95c163b5de9670caf87374cc",
+      "type": "Zip archive data, at least v1.0 to extract, compression method=store"
+    },
+    {
+      "path": "main/Challenge 4/pw.txt",
+      "size": 50,
+      "mtime": 1759080040,
+      "sha256": "6b65808c9ccbf9228d6e6064b7c1d94d73008d08728b42a7c0d4d55f3be81140",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4/qtbl_stego.py",
+      "size": 9353,
+      "mtime": 1759086656,
+      "sha256": "14b412fa19bb27c309d5c30e9dea40608c5ae86653b12113fcce98d552c9f3db",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4/random.bin",
+      "size": 4096,
+      "mtime": 1759076724,
+      "sha256": "9dcd915d9940626716ecadc479371d8bd0e697a6b58c07508662c8f036125e2b",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4/secret.enc",
+      "size": 11008,
+      "mtime": 1759090050,
+      "sha256": "4f56b6b2199cc90c414aaccdf32febac2a989d349e26e7e8f8cef1127adff1eb",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4/secret.txt",
+      "size": 21,
+      "mtime": 1759076222,
+      "sha256": "e8d488a1901b5a157c7b56795c73e4320e1cc4c2b6100d10a949b187842601f7",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/secret_bundle.zip",
+      "size": 10991,
+      "mtime": 1759089650,
+      "sha256": "b826d2632902159bad8d601d131268ef16d2d5fff59f9e07cff4785d29c16e6a",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "main/Challenge 4/secret_bundle/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4/secret_bundle/iv.bin",
+      "size": 16,
+      "mtime": 1759088522,
+      "sha256": "c3b00604f465594b2e29853da920b79bb048eba335a9e706d76a9a54a78bf4fd",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4/secret_bundle/passwords.enc",
+      "size": 4960,
+      "mtime": 1759088622,
+      "sha256": "cae85530715c3f46a8733512e0949e6f05df46326f957796b18f98b929fd2c39",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4/secret_bundle/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4v2/.DS_Store",
+      "size": 8196,
+      "mtime": 1784503068,
+      "sha256": "82e5b2800f58320d334060e33abd8c67d8be38719b7adf9d0c637f26183c5943",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "main/Challenge 4v2/Honey.jpeg",
+      "size": 277286,
+      "mtime": 1759160534,
+      "sha256": "99bf3bce5d48b3803a68fb1c71df2282f279a760780c8537840211173d332b35",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 4v2/Honey_orig.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/Challenge 4v2/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/aeskey.bin",
+      "size": 32,
+      "mtime": 1759160436,
+      "sha256": "192d3b44b8e44787dfe62700e5a73869a2bf2a3c5646a6b83075121d82379fa2",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4v2/decoy_random.enc",
+      "size": 4128,
+      "mtime": 1759159714,
+      "sha256": "79c64dd738c612ef335ec229798f790020fd73d2c26cb60438f98b2ed9d929b7",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4v2/do_not_open.txt",
+      "size": 58,
+      "mtime": 1759077468,
+      "sha256": "9667580c33a2dc882a4dfa72b43753e9dc1a21ac6679d47fcccae7c08d4eeabb",
+      "type": "ASCII text"
+    },
+    {
+      "path": "main/Challenge 4v2/flag.txt",
+      "size": 55,
+      "mtime": 1759076022,
+      "sha256": "43f9a331935218745b0f3ae6ecdede8777e04068865bb9f580ed09b1c1dcc4f8",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/inner.jpeg",
+      "size": 25731,
+      "mtime": 1759073850,
+      "sha256": "4c9b30640d360ea49c54a74e75b483481948459b3a18b2c4e526dabce1172503",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "main/Challenge 4v2/iv.bin",
+      "size": 16,
+      "mtime": 1759160454,
+      "sha256": "aaeacb702bdff3a53b3bcb60a0d35e7ce9b1bd4a8a2390b4932322680710963b",
+      "type": "Non-ISO extended-ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/mid.zip",
+      "size": 237,
+      "mtime": 1759159666,
+      "sha256": "17ea009ec0a3e8f07ae7b482f8b2f32bac5336c626f0dd06889fbcc943ff4845",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "main/Challenge 4v2/nothingtoseehere.jpg",
+      "size": 25731,
+      "mtime": 1759160446,
+      "sha256": "d586ceb465a2c54eaa3ecb361b30040f757a2cd689456c769b3ab1e7e3d8ab50",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "main/Challenge 4v2/passwords.enc",
+      "size": 4960,
+      "mtime": 1759160476,
+      "sha256": "39e88a1cd2cd3a8949bd0c85e905d95fb2eea46ea5e97c05ffa21e58eabaed1c",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4v2/passwords.txt",
+      "size": 4958,
+      "mtime": 1759084188,
+      "sha256": "d757241d45a60795bf962ee40576a842eb173e4de488275fe07b220d876a501e",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "main/Challenge 4v2/payload.enc",
+      "size": 240,
+      "mtime": 1759159700,
+      "sha256": "0145bddfa18f840759e96bf33167f1ff2dc1e8d4803354c8b7c52660bde8429c",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4v2/payload.zip",
+      "size": 221,
+      "mtime": 1759159650,
+      "sha256": "50ef589893444efc14319d2b2d697d697b36ae553ec4bd7b3ee9f04dbf2777b8",
+      "type": "Zip archive data, at least v1.0 to extract, compression method=store"
+    },
+    {
+      "path": "main/Challenge 4v2/pw.txt",
+      "size": 50,
+      "mtime": 1759080040,
+      "sha256": "6b65808c9ccbf9228d6e6064b7c1d94d73008d08728b42a7c0d4d55f3be81140",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4v2/qtbl_stego.py",
+      "size": 9353,
+      "mtime": 1759086656,
+      "sha256": "14b412fa19bb27c309d5c30e9dea40608c5ae86653b12113fcce98d552c9f3db",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4v2/random.bin",
+      "size": 4096,
+      "mtime": 1759076724,
+      "sha256": "9dcd915d9940626716ecadc479371d8bd0e697a6b58c07508662c8f036125e2b",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/.DS_Store",
+      "size": 6148,
+      "mtime": 1759162066,
+      "sha256": "b3a0f112d6a15f490b0bca99c07ee9e9bb396416eb95f0161e359abaa45ca61e",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/aeskey_rec.bin",
+      "size": 32,
+      "mtime": 1759161490,
+      "sha256": "192d3b44b8e44787dfe62700e5a73869a2bf2a3c5646a6b83075121d82379fa2",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/iv.bin",
+      "size": 16,
+      "mtime": 1759160454,
+      "sha256": "aaeacb702bdff3a53b3bcb60a0d35e7ce9b1bd4a8a2390b4932322680710963b",
+      "type": "Non-ISO extended-ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/passwords.enc",
+      "size": 4960,
+      "mtime": 1759160476,
+      "sha256": "39e88a1cd2cd3a8949bd0c85e905d95fb2eea46ea5e97c05ffa21e58eabaed1c",
+      "type": "data"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/passwords.txt",
+      "size": 4958,
+      "mtime": 1759161588,
+      "sha256": "83fe8dea1b1332f8fd3589333be0f195624bb801b074f9b2773156961abc19f4",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "main/Challenge 4v2/rb/secret_bundle.zip",
+      "size": 10991,
+      "mtime": 1759161430,
+      "sha256": "efb9732a74933496ba2430a3965223d923fd0f3ae5591ae17600b490dffc27b9",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "main/Challenge 4v2/secret.enc",
+      "size": 11008,
+      "mtime": 1759160494,
+      "sha256": "ed34176e76d6b06695de8dd8850baa2b76efb1605a09d38e9a655e10870578df",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "main/Challenge 4v2/secret.txt",
+      "size": 21,
+      "mtime": 1759076222,
+      "sha256": "e8d488a1901b5a157c7b56795c73e4320e1cc4c2b6100d10a949b187842601f7",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "main/Challenge 4v2/secret_bundle.zip",
+      "size": 10991,
+      "mtime": 1759160488,
+      "sha256": "efb9732a74933496ba2430a3965223d923fd0f3ae5591ae17600b490dffc27b9",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "main/Untitled.rtf",
+      "size": 17784,
+      "mtime": 1784274482,
+      "sha256": "a10f4f28c23b3dc60ccf0dd06f927403cc3393ae44ff378b18045c7c1697da73",
+      "type": "Rich Text Format data, version 1, ANSI, code page 1252"
+    },
+    {
+      "path": "main/badger.enc",
+      "size": 65,
+      "mtime": 1759662158,
+      "sha256": "c30ef39ff39ed68ef8767c1b5de7866444904a4e86704c161cd36abc86c200e1",
+      "type": "openssl enc'd data with salted password, base64 encoded"
+    },
+    {
+      "path": "main/badger_photo.jpeg",
+      "size": 74825,
+      "mtime": 1759661956,
+      "sha256": "01c388e88a17f3b9bc4c75aa56608d749ce10bf28fc525b624e8787770c6c859",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], comment: \"U2FsdGVkX18KFhm4mZ2SwRS7J9jOm2EuecqdadiwCqDFFfA+VIKlg88xIJ/A0l+l\", baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "main/challenge4.md",
+      "size": 9940,
+      "mtime": 1759162826,
+      "sha256": "60161c24ab0a243c27668ab4ebbd1bdb3c7210985dfe03933664c99b4ff5c408",
+      "type": "Unicode text, UTF-8 text, with very long lines (348)"
+    },
+    {
+      "path": "main/email.eml",
+      "size": 102452,
+      "mtime": 1759661876,
+      "sha256": "366b8767f647cd5df0ded2384e9e0feaa61b7cc4279b822be4679c660a20ab7b",
+      "type": "news or mail text, Unicode text, UTF-8 text"
+    },
+    {
+      "path": "main/encryptedFlagOutput.enc.b64",
+      "size": 65,
+      "mtime": 1759663546,
+      "sha256": "c30ef39ff39ed68ef8767c1b5de7866444904a4e86704c161cd36abc86c200e1",
+      "type": "openssl enc'd data with salted password, base64 encoded"
+    },
+    {
+      "path": "main/flag.txt",
+      "size": 30,
+      "mtime": 1759663592,
+      "sha256": "d95e39d16dcf40a6705a49c39a6820c33dc3296896abd98d29f691002dc01e13",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/.DS_Store",
+      "size": 8196,
+      "mtime": 1784503068,
+      "sha256": "48fe271441ebfbaa830e49181f7e40695f7e819b0ae9de1113a0e2f6731e94d7",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "virtualbox share original/CTF Stego.md",
+      "size": 8124,
+      "mtime": 1759253216,
+      "sha256": "592e2a12bcdffffc3fb6aa32b4898482b057df65125b243979d8b4adbda61d30",
+      "type": "Unicode text, UTF-8 text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/.DS_Store",
+      "size": 6148,
+      "mtime": 1759064030,
+      "sha256": "c1eb838a546649df40ccddfb2f7940c8f015176e90163daaaa168a1d0cec1cf9",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/ChatGPT Image Sep 28, 2025, 02_30_51 PM.png",
+      "size": 2167523,
+      "mtime": 1759059052,
+      "sha256": "fc1da4b6d1b6d1d77fb5f7bed2a77f50567f51aa60078bc8b2945f231dd1e9b0",
+      "type": "PNG image data, 1024 x 1024, 8-bit/color RGB, non-interlaced"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/Flag.enc.b64",
+      "size": 65,
+      "mtime": 1759061832,
+      "sha256": "c30ef39ff39ed68ef8767c1b5de7866444904a4e86704c161cd36abc86c200e1",
+      "type": "openssl enc'd data with salted password, base64 encoded"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/Flag.txt",
+      "size": 30,
+      "mtime": 1759060702,
+      "sha256": "d95e39d16dcf40a6705a49c39a6820c33dc3296896abd98d29f691002dc01e13",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/badger_photo.jpeg",
+      "size": 74825,
+      "mtime": 1759061926,
+      "sha256": "01c388e88a17f3b9bc4c75aa56608d749ce10bf28fc525b624e8787770c6c859",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], comment: \"U2FsdGVkX18KFhm4mZ2SwRS7J9jOm2EuecqdadiwCqDFFfA+VIKlg88xIJ/A0l+l\", baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/badger_photo_orig.jpg",
+      "size": 74756,
+      "mtime": 1759059296,
+      "sha256": "0b95e87084e0c55be09a1ef6d6e89e137f3d40d8278bf4c522f77b4ef920770c",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/email.eml",
+      "size": 102452,
+      "mtime": 1759062016,
+      "sha256": "366b8767f647cd5df0ded2384e9e0feaa61b7cc4279b822be4679c660a20ab7b",
+      "type": "news or mail text, Unicode text, UTF-8 text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/emailScript.txt",
+      "size": 1484,
+      "mtime": 1759062014,
+      "sha256": "fc1d9bbc611892d2ed4398d2e04905eaa9fc1159ea931d10331cc61929571439",
+      "type": "Unicode text, UTF-8 text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 1/email_test_1.eml",
+      "size": 102357,
+      "mtime": 1759061648,
+      "sha256": "2312ddbeaf6950cfcd1fc9b4de7e7be7094c6e8c94c5b56c0b5e79f9e9d6de58",
+      "type": "news or mail text, Unicode text, UTF-8 text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 2/.DS_Store",
+      "size": 6148,
+      "mtime": 1759075876,
+      "sha256": "98458de963d57c267ecace4e942e000a66f05f7343566daacf37b6e497ac03bb",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 2/Flag 2.txt",
+      "size": 5063,
+      "mtime": 1759073100,
+      "sha256": "ddebc7dbefa5e11b35c066a551d9ab08addb6d39df2bc5d46e70eb14d52c11a5",
+      "type": "ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 2/Flag.txt",
+      "size": 37,
+      "mtime": 1759063360,
+      "sha256": "061f3d2d27c3b9ce8e55596494670fa93e6fa56e6f3ba76ae3b8776d0a309a74",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 2/genstring.py",
+      "size": 767,
+      "mtime": 1759073120,
+      "sha256": "3f7c850d1f498dfc2e3cc85b885b1aab9bfde0713dfc06c4201f6aafa5c45615",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 2/stego_badger.jpeg",
+      "size": 130623,
+      "mtime": 1759066640,
+      "sha256": "244e2a18e488ff165d3bf5f5422cc7d4c4f5ff655c010c9ea97aad54bb6a436c",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 2/stego_badger_orig.jpg",
+      "size": 86366,
+      "mtime": 1759063698,
+      "sha256": "a991a297f4f69cf182941a02c8f57d0e025c301dbbf53318b64dfe45287a37f9",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 2/stego_badger_orig.png",
+      "size": 1948498,
+      "mtime": 1759062720,
+      "sha256": "a32cb3b7c501fdcd30156c4bcd6ee19b7936e77946531270a66f4f3fd4cb602b",
+      "type": "PNG image data, 1024 x 1024, 8-bit/color RGB, non-interlaced"
+    },
+    {
+      "path": "virtualbox share original/Challenge 2/strings_py.txt",
+      "size": 5000,
+      "mtime": 1759073110,
+      "sha256": "026b5c5427c5e3de32435c70f3b6b6ee5cc593cfb84e95513188a04a4b2ce233",
+      "type": "ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/.DS_Store",
+      "size": 10244,
+      "mtime": 1784503068,
+      "sha256": "c5469ded34514b8cf2ae81087064081f1b646baf5d60401b365160993e381923",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/Honey.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/Honey_orig.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/aeskey.bin",
+      "size": 32,
+      "mtime": 1759086836,
+      "sha256": "df87e52b551ca7db42c208e10358c1b9443f59a6e9f558dc338357be844a5b7c",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/aeskey_rec.bin",
+      "size": 32,
+      "mtime": 1759090700,
+      "sha256": "df87e52b551ca7db42c208e10358c1b9443f59a6e9f558dc338357be844a5b7c",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/decoy_random.enc",
+      "size": 4128,
+      "mtime": 1759080228,
+      "sha256": "b0f3dec9a53b8c6d98704e49a7fbdd653f09ebfbbdf9b4598fdf3dff48c8df92",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/do_not_open.txt",
+      "size": 58,
+      "mtime": 1759077468,
+      "sha256": "9667580c33a2dc882a4dfa72b43753e9dc1a21ac6679d47fcccae7c08d4eeabb",
+      "type": "ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/flag.txt",
+      "size": 55,
+      "mtime": 1759076022,
+      "sha256": "43f9a331935218745b0f3ae6ecdede8777e04068865bb9f580ed09b1c1dcc4f8",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/inner.jpeg",
+      "size": 25731,
+      "mtime": 1759073850,
+      "sha256": "4c9b30640d360ea49c54a74e75b483481948459b3a18b2c4e526dabce1172503",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/iv.bin",
+      "size": 16,
+      "mtime": 1759088522,
+      "sha256": "c3b00604f465594b2e29853da920b79bb048eba335a9e706d76a9a54a78bf4fd",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/mid.zip",
+      "size": 237,
+      "mtime": 1759078224,
+      "sha256": "8b88a31d6295b74f3169e4de47ae194ef851a9e02e4f57b706ec510a8c423b26",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/nothingtoseehere.jpg",
+      "size": 25731,
+      "mtime": 1759086878,
+      "sha256": "55740bda74a285bd07147a70063d78c58ef7a24f4d3e56ab9d1d5b2c5e1dfbdf",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/passwords.dec",
+      "size": 4958,
+      "mtime": 1759090744,
+      "sha256": "d757241d45a60795bf962ee40576a842eb173e4de488275fe07b220d876a501e",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/passwords.enc",
+      "size": 4960,
+      "mtime": 1759088622,
+      "sha256": "cae85530715c3f46a8733512e0949e6f05df46326f957796b18f98b929fd2c39",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/passwords.txt",
+      "size": 4958,
+      "mtime": 1759084188,
+      "sha256": "d757241d45a60795bf962ee40576a842eb173e4de488275fe07b220d876a501e",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/payload.enc",
+      "size": 240,
+      "mtime": 1759080066,
+      "sha256": "a53eed275a35c8f5b075a83af8a294947cb6da4f8bb188ec83bcadd09fb4e882",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/payload.zip",
+      "size": 221,
+      "mtime": 1759078190,
+      "sha256": "052064dd8f77a9e155be9ae49b1628f93039822e95c163b5de9670caf87374cc",
+      "type": "Zip archive data, at least v1.0 to extract, compression method=store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/pw.txt",
+      "size": 50,
+      "mtime": 1759080040,
+      "sha256": "6b65808c9ccbf9228d6e6064b7c1d94d73008d08728b42a7c0d4d55f3be81140",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/qtbl_stego.py",
+      "size": 9353,
+      "mtime": 1759086656,
+      "sha256": "14b412fa19bb27c309d5c30e9dea40608c5ae86653b12113fcce98d552c9f3db",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/random.bin",
+      "size": 4096,
+      "mtime": 1759076724,
+      "sha256": "9dcd915d9940626716ecadc479371d8bd0e697a6b58c07508662c8f036125e2b",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/recovered_bundle/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/recovered_bundle/iv.bin",
+      "size": 16,
+      "mtime": 1759088522,
+      "sha256": "c3b00604f465594b2e29853da920b79bb048eba335a9e706d76a9a54a78bf4fd",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/recovered_bundle/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/recovered_bundle/passwords.enc",
+      "size": 4960,
+      "mtime": 1759088622,
+      "sha256": "cae85530715c3f46a8733512e0949e6f05df46326f957796b18f98b929fd2c39",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/recovered_bundle/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/secret.enc",
+      "size": 11008,
+      "mtime": 1759090050,
+      "sha256": "4f56b6b2199cc90c414aaccdf32febac2a989d349e26e7e8f8cef1127adff1eb",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/secret.txt",
+      "size": 21,
+      "mtime": 1759076222,
+      "sha256": "e8d488a1901b5a157c7b56795c73e4320e1cc4c2b6100d10a949b187842601f7",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/secret_bundle.ok.zip",
+      "size": 10991,
+      "mtime": 1759090512,
+      "sha256": "b826d2632902159bad8d601d131268ef16d2d5fff59f9e07cff4785d29c16e6a",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4 copy/secret_bundle.zip",
+      "size": 10991,
+      "mtime": 1759089650,
+      "sha256": "b826d2632902159bad8d601d131268ef16d2d5fff59f9e07cff4785d29c16e6a",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/.DS_Store",
+      "size": 10244,
+      "mtime": 1784503068,
+      "sha256": "1eebdfb9930716b703c5667667e530c4ff267014641070a33bce85d123d899f0",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/.DS_Store",
+      "size": 6148,
+      "mtime": 1784502754,
+      "sha256": "15d4fd90cb2a2b489a461bdfa32065a73059e4474c585f941ae052feee2fa2b2",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/inner2.jpeg",
+      "size": 25731,
+      "mtime": 1759081778,
+      "sha256": "4c9b30640d360ea49c54a74e75b483481948459b3a18b2c4e526dabce1172503",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/key_oneline.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/qtbl.py",
+      "size": 8091,
+      "mtime": 1759082788,
+      "sha256": "15902415783b7c9ac6fb0376c2bc33ea6aab42fc4521830a7b7ad4c8ad3e1bff",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/qtbl_stego_1.py",
+      "size": 8791,
+      "mtime": 1759086632,
+      "sha256": "1e453953ea5f1f86fdffc844f68591d5bdf48b8cc5c365addee10d0505d7b04d",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/secret.enc",
+      "size": 5664,
+      "mtime": 1759083246,
+      "sha256": "7262788b0b21dae64424d1a13c73cca74917b46f4809d2747a5c72cafb18ba11",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/secret.zip",
+      "size": 5636,
+      "mtime": 1759082966,
+      "sha256": "0ef4b6485a6cd554a83c711a8ba9c2480785563850012bbd0b4f18e3a7a9fa57",
+      "type": "Zip archive data, at least v1.0 to extract, compression method=store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/secret/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/secret/qtbl.py",
+      "size": 8091,
+      "mtime": 1759082788,
+      "sha256": "15902415783b7c9ac6fb0376c2bc33ea6aab42fc4521830a7b7ad4c8ad3e1bff",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/secret/secret.txt",
+      "size": 21,
+      "mtime": 1759076222,
+      "sha256": "e8d488a1901b5a157c7b56795c73e4320e1cc4c2b6100d10a949b187842601f7",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Archive/seed.txt",
+      "size": 32,
+      "mtime": 1759086048,
+      "sha256": "d51df962422708dcbfef5762157cdfe9ba7fc70476df6af7eb7dd89e476c1cdd",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/ChatGPT Image Sep 28, 2025, 07_02_20 PM.png",
+      "size": 2139027,
+      "mtime": 1759075340,
+      "sha256": "fc79b396a92f7b0bb19f93b0870d2123c7161ed4995e6043036ae1595f299091",
+      "type": "PNG image data, 1024 x 1024, 8-bit/color RGB, non-interlaced"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Honey.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/Honey_orig.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/aeskey.bin",
+      "size": 32,
+      "mtime": 1759086836,
+      "sha256": "df87e52b551ca7db42c208e10358c1b9443f59a6e9f558dc338357be844a5b7c",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/decoy_random.enc",
+      "size": 4128,
+      "mtime": 1759080228,
+      "sha256": "b0f3dec9a53b8c6d98704e49a7fbdd653f09ebfbbdf9b4598fdf3dff48c8df92",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/do_not_open.txt",
+      "size": 58,
+      "mtime": 1759077468,
+      "sha256": "9667580c33a2dc882a4dfa72b43753e9dc1a21ac6679d47fcccae7c08d4eeabb",
+      "type": "ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/flag.txt",
+      "size": 55,
+      "mtime": 1759076022,
+      "sha256": "43f9a331935218745b0f3ae6ecdede8777e04068865bb9f580ed09b1c1dcc4f8",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/inner.jpeg",
+      "size": 25731,
+      "mtime": 1759073850,
+      "sha256": "4c9b30640d360ea49c54a74e75b483481948459b3a18b2c4e526dabce1172503",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/iv.bin",
+      "size": 16,
+      "mtime": 1759088522,
+      "sha256": "c3b00604f465594b2e29853da920b79bb048eba335a9e706d76a9a54a78bf4fd",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/mid.zip",
+      "size": 237,
+      "mtime": 1759078224,
+      "sha256": "8b88a31d6295b74f3169e4de47ae194ef851a9e02e4f57b706ec510a8c423b26",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/nothingtoseehere.jpg",
+      "size": 25731,
+      "mtime": 1759086878,
+      "sha256": "55740bda74a285bd07147a70063d78c58ef7a24f4d3e56ab9d1d5b2c5e1dfbdf",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/passwords.enc",
+      "size": 4960,
+      "mtime": 1759088622,
+      "sha256": "cae85530715c3f46a8733512e0949e6f05df46326f957796b18f98b929fd2c39",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/passwords.txt",
+      "size": 4958,
+      "mtime": 1759154504,
+      "sha256": "83fe8dea1b1332f8fd3589333be0f195624bb801b074f9b2773156961abc19f4",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/payload.enc",
+      "size": 240,
+      "mtime": 1759080066,
+      "sha256": "a53eed275a35c8f5b075a83af8a294947cb6da4f8bb188ec83bcadd09fb4e882",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/payload.zip",
+      "size": 221,
+      "mtime": 1759078190,
+      "sha256": "052064dd8f77a9e155be9ae49b1628f93039822e95c163b5de9670caf87374cc",
+      "type": "Zip archive data, at least v1.0 to extract, compression method=store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/pw.txt",
+      "size": 50,
+      "mtime": 1759080040,
+      "sha256": "6b65808c9ccbf9228d6e6064b7c1d94d73008d08728b42a7c0d4d55f3be81140",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/qtbl_stego.py",
+      "size": 9353,
+      "mtime": 1759086656,
+      "sha256": "14b412fa19bb27c309d5c30e9dea40608c5ae86653b12113fcce98d552c9f3db",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/random.bin",
+      "size": 4096,
+      "mtime": 1759076724,
+      "sha256": "9dcd915d9940626716ecadc479371d8bd0e697a6b58c07508662c8f036125e2b",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/secret.enc",
+      "size": 11008,
+      "mtime": 1759090050,
+      "sha256": "4f56b6b2199cc90c414aaccdf32febac2a989d349e26e7e8f8cef1127adff1eb",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/secret.txt",
+      "size": 21,
+      "mtime": 1759076222,
+      "sha256": "e8d488a1901b5a157c7b56795c73e4320e1cc4c2b6100d10a949b187842601f7",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/secret_bundle.zip",
+      "size": 10991,
+      "mtime": 1759089650,
+      "sha256": "b826d2632902159bad8d601d131268ef16d2d5fff59f9e07cff4785d29c16e6a",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/secret_bundle/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/secret_bundle/iv.bin",
+      "size": 16,
+      "mtime": 1759088522,
+      "sha256": "c3b00604f465594b2e29853da920b79bb048eba335a9e706d76a9a54a78bf4fd",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/secret_bundle/passwords.enc",
+      "size": 4960,
+      "mtime": 1759088622,
+      "sha256": "cae85530715c3f46a8733512e0949e6f05df46326f957796b18f98b929fd2c39",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4/secret_bundle/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/.DS_Store",
+      "size": 8196,
+      "mtime": 1784503068,
+      "sha256": "663ced3febd8257dd01a19555dea553a06da9ae339b6feec4b105b929f939622",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/Honey.jpeg",
+      "size": 277286,
+      "mtime": 1759160534,
+      "sha256": "99bf3bce5d48b3803a68fb1c71df2282f279a760780c8537840211173d332b35",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/Honey_orig.jpeg",
+      "size": 235921,
+      "mtime": 1759075802,
+      "sha256": "9b37e26110a3c20bbbcdb2a54e3221b71b42b99721fe27f2ccb6c376ea1f6b55",
+      "type": "JPEG image data, Exif standard: [TIFF image data, big-endian, direntries=6, orientation=upper-left, xresolution=86, yresolution=94, resolutionunit=2], baseline, precision 8, 1024x1024, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/aeskey.bin",
+      "size": 32,
+      "mtime": 1759160436,
+      "sha256": "192d3b44b8e44787dfe62700e5a73869a2bf2a3c5646a6b83075121d82379fa2",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/decoy_random.enc",
+      "size": 4128,
+      "mtime": 1759159714,
+      "sha256": "79c64dd738c612ef335ec229798f790020fd73d2c26cb60438f98b2ed9d929b7",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/do_not_open.txt",
+      "size": 58,
+      "mtime": 1759077468,
+      "sha256": "9667580c33a2dc882a4dfa72b43753e9dc1a21ac6679d47fcccae7c08d4eeabb",
+      "type": "ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/flag.txt",
+      "size": 55,
+      "mtime": 1759076022,
+      "sha256": "43f9a331935218745b0f3ae6ecdede8777e04068865bb9f580ed09b1c1dcc4f8",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/inner.jpeg",
+      "size": 25731,
+      "mtime": 1759073850,
+      "sha256": "4c9b30640d360ea49c54a74e75b483481948459b3a18b2c4e526dabce1172503",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/iv.bin",
+      "size": 16,
+      "mtime": 1759160454,
+      "sha256": "aaeacb702bdff3a53b3bcb60a0d35e7ce9b1bd4a8a2390b4932322680710963b",
+      "type": "Non-ISO extended-ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/mid.zip",
+      "size": 237,
+      "mtime": 1759159666,
+      "sha256": "17ea009ec0a3e8f07ae7b482f8b2f32bac5336c626f0dd06889fbcc943ff4845",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/nothingtoseehere.jpg",
+      "size": 25731,
+      "mtime": 1759160446,
+      "sha256": "d586ceb465a2c54eaa3ecb361b30040f757a2cd689456c769b3ab1e7e3d8ab50",
+      "type": "JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, progressive, precision 8, 311x572, components 3"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/passwords.enc",
+      "size": 4960,
+      "mtime": 1759160476,
+      "sha256": "39e88a1cd2cd3a8949bd0c85e905d95fb2eea46ea5e97c05ffa21e58eabaed1c",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/passwords.txt",
+      "size": 4958,
+      "mtime": 1759084188,
+      "sha256": "d757241d45a60795bf962ee40576a842eb173e4de488275fe07b220d876a501e",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/payload.enc",
+      "size": 240,
+      "mtime": 1759159700,
+      "sha256": "0145bddfa18f840759e96bf33167f1ff2dc1e8d4803354c8b7c52660bde8429c",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/payload.zip",
+      "size": 221,
+      "mtime": 1759159650,
+      "sha256": "50ef589893444efc14319d2b2d697d697b36ae553ec4bd7b3ee9f04dbf2777b8",
+      "type": "Zip archive data, at least v1.0 to extract, compression method=store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/pw.txt",
+      "size": 50,
+      "mtime": 1759080040,
+      "sha256": "6b65808c9ccbf9228d6e6064b7c1d94d73008d08728b42a7c0d4d55f3be81140",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/qtbl_stego.py",
+      "size": 9353,
+      "mtime": 1759086656,
+      "sha256": "14b412fa19bb27c309d5c30e9dea40608c5ae86653b12113fcce98d552c9f3db",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/random.bin",
+      "size": 4096,
+      "mtime": 1759076724,
+      "sha256": "9dcd915d9940626716ecadc479371d8bd0e697a6b58c07508662c8f036125e2b",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/.DS_Store",
+      "size": 6148,
+      "mtime": 1759162066,
+      "sha256": "b3a0f112d6a15f490b0bca99c07ee9e9bb396416eb95f0161e359abaa45ca61e",
+      "type": "Apple Desktop Services Store"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/STEGO_KEY_386.txt",
+      "size": 4824,
+      "mtime": 1759081012,
+      "sha256": "a30e8b38f41f153733acbd6092a0bc4e63f5f2ae540f0b06b69921e683d7ede0",
+      "type": "ASCII text, with very long lines (4824), with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/aeskey_rec.bin",
+      "size": 32,
+      "mtime": 1759161490,
+      "sha256": "192d3b44b8e44787dfe62700e5a73869a2bf2a3c5646a6b83075121d82379fa2",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/iv.bin",
+      "size": 16,
+      "mtime": 1759160454,
+      "sha256": "aaeacb702bdff3a53b3bcb60a0d35e7ce9b1bd4a8a2390b4932322680710963b",
+      "type": "Non-ISO extended-ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/keyblock.txt",
+      "size": 72,
+      "mtime": 1759082488,
+      "sha256": "29b2f8c21eb4fd196632760cb86be03b6308673332468ebaf43df3de2d581560",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/passwords.enc",
+      "size": 4960,
+      "mtime": 1759160476,
+      "sha256": "39e88a1cd2cd3a8949bd0c85e905d95fb2eea46ea5e97c05ffa21e58eabaed1c",
+      "type": "data"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/passwords.txt",
+      "size": 4958,
+      "mtime": 1759161588,
+      "sha256": "83fe8dea1b1332f8fd3589333be0f195624bb801b074f9b2773156961abc19f4",
+      "type": "ASCII text, with very long lines (4824)"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/qtbl.py",
+      "size": 8726,
+      "mtime": 1759086712,
+      "sha256": "f046430d241f625d50a90d31c4d05139792082d5b8e07eabcbbfffed889948b1",
+      "type": "Python script text executable, ASCII text"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/rb/secret_bundle.zip",
+      "size": 10991,
+      "mtime": 1759161430,
+      "sha256": "efb9732a74933496ba2430a3965223d923fd0f3ae5591ae17600b490dffc27b9",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/secret.enc",
+      "size": 11008,
+      "mtime": 1759160494,
+      "sha256": "ed34176e76d6b06695de8dd8850baa2b76efb1605a09d38e9a655e10870578df",
+      "type": "openssl enc'd data with salted password"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/secret.txt",
+      "size": 21,
+      "mtime": 1759076222,
+      "sha256": "e8d488a1901b5a157c7b56795c73e4320e1cc4c2b6100d10a949b187842601f7",
+      "type": "ASCII text, with no line terminators"
+    },
+    {
+      "path": "virtualbox share original/Challenge 4v2/secret_bundle.zip",
+      "size": 10991,
+      "mtime": 1759160488,
+      "sha256": "efb9732a74933496ba2430a3965223d923fd0f3ae5591ae17600b490dffc27b9",
+      "type": "Zip archive data, at least v2.0 to extract, compression method=deflate"
+    },
+    {
+      "path": "virtualbox share original/challenge4.md",
+      "size": 9940,
+      "mtime": 1759162826,
+      "sha256": "60161c24ab0a243c27668ab4ebbd1bdb3c7210985dfe03933664c99b4ff5c408",
+      "type": "Unicode text, UTF-8 text, with very long lines (348)"
+    }
+  ]
+}

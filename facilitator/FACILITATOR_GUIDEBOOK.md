@@ -115,8 +115,9 @@ That's intended, not a mistake.
   breaks the cipher step.
 
 **Warehouse supervision — virtual (browser game):**
-- Confirm the game URL is reachable before the session (local
-  `../participant/warehouse-game/` or <https://britt.gg/ctf/warehouse/>).
+- Confirm the game URL is reachable before the session (serve `warehouse-game/`
+  from the [`jd-ctf-environment`](https://github.com/jdtherobot/jd-ctf-environment)
+  repo locally, or use <https://britt.gg/ctf/warehouse/>).
 - The game is stateless — a stuck player can just reload. Navigation in the game
   mirrors the physical rows/shelves/bays/sub-sections/boxes, so the same hint text
   works for both.
@@ -284,7 +285,7 @@ Hard **do-not-reveal-early** items:
 | **Carve produces a broken/short file** (C4) | Wrong `dd` offset or length | Re-read binwalk; `skip=` the exact start byte; don't run past the next signature. |
 | **Unzip fails after decrypt** (C1/C4) | Decrypt actually failed but they didn't notice | If the decrypt was wrong, the "zip" is garbage — fix the decrypt first. |
 | **C3 location "works" but flag is wrong** | Lucky location, wrong ciphertext/keywords | Confirm the address walk *and* that they used **line 9** with the four corner keywords. |
-| **Warehouse game won't load** | URL/server not up | Serve `../participant/warehouse-game/` locally, or use <https://britt.gg/ctf/warehouse/>. |
+| **Warehouse game won't load** | URL/server not up | Serve `warehouse-game/` from the [`jd-ctf-environment`](https://github.com/jdtherobot/jd-ctf-environment) repo locally, or use <https://britt.gg/ctf/warehouse/>. |
 
 ---
 

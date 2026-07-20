@@ -6,7 +6,7 @@ export ARCHIVE_DIR
 
 CHALLENGES := 01-photo-day 02-stegosaurus-1 03-stegosaurus-2-warehouse 04-stegosaurus-3
 
-.PHONY: help inventory build-challenges test-challenges warehouse-game browser-lab \
+.PHONY: help inventory build-challenges test-challenges \
         scan-secrets verify-archive all clean
 
 help:
@@ -14,7 +14,6 @@ help:
 	@echo "  make inventory         regenerate the archive SHA-256 inventory + fingerprint"
 	@echo "  make build-challenges  run every facilitator/challenges/NN/rebuild.sh"
 	@echo "  make test-challenges   run every facilitator/challenges/NN/solve_test.sh (asserts flags)"
-	@echo "  make warehouse-game    build the static warehouse game if it has a build step"
 	@echo "  make scan-secrets      PRE-PUBLISH GATE: prove no secret leaks into participant/"
 	@echo "  make verify-archive    confirm the archive fingerprint is unchanged"
 	@echo "  make all               build-challenges + test-challenges + scan-secrets + verify-archive"
@@ -35,14 +34,6 @@ test-challenges:
 	  if [ -f "$$s" ]; then echo "== test $$c =="; bash "$$s" || rc=1; \
 	  else echo "-- skip $$c (no solve_test.sh yet) --"; fi; \
 	done; exit $$rc
-
-warehouse-game:
-	@if [ -f participant/warehouse-game/build.sh ]; then bash participant/warehouse-game/build.sh; \
-	elif [ -f participant/warehouse-game/index.html ]; then echo "warehouse game: static build present (index.html)"; \
-	else echo "-- warehouse game not built yet --"; fi
-
-browser-lab:
-	@echo "browser lab: see browser-lab/ (built in Wave 4)"
 
 scan-secrets:
 	@bash build/secret-scan/scan.sh

@@ -58,7 +58,8 @@ Resolve the VA and go to that exact box — one box in the whole warehouse is
 yours. Inside it is a note. The note tells you the rest.
 
 How you visit the warehouse depends on your event: in-person events use the
-physical warehouse; remote players use the companion warehouse game. Ask your
-facilitator which applies.
+physical warehouse; remote players use the companion warehouse game from the
+challenge environment at <https://github.com/jdtherobot/jd-ctf-environment>.
+Ask your facilitator which applies.
 
 Flag format: `Flag{...}` — when the trail ends, wrap what you found.

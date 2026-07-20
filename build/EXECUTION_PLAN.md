@@ -3,6 +3,8 @@
 Streamlined plan of record for finishing the four-challenge stego CTF as a clean
 project split into `participant/` and `facilitator/`.
 
+> Post-build: the browser lab and warehouse game were split into the separate [`jd-ctf-environment`](https://github.com/jdtherobot/jd-ctf-environment) repo.
+
 ## Locked decisions
 
 - **One public showcase repo**, two top-level folders: `participant/` (spoiler-free — the folder a

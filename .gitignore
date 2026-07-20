@@ -18,8 +18,6 @@ wordlists/full/
 *.qcow2
 *.iso
 *.vmdk
-browser-lab/build/
-browser-lab/dist/
 vm-appliance/
 
 # --- Build scratch & recovered outputs ---

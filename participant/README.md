@@ -21,8 +21,9 @@ inspection, data carving, and a little computer architecture — in a controlled
 consent-based setting.
 
 - Everything you need is a **local file** supplied with this bundle (plus an
-  optional warehouse game). Nothing here asks you to touch a third-party system,
-  a live service, someone else's account, or any real security control.
+  optional browser warehouse game, part of the separate challenge environment).
+  Nothing here asks you to touch a third-party system, a live service, someone
+  else's account, or any real security control.
 - The tools you'll use (ExifTool, OpenSSL, Binwalk, Steghide/Stegseek, and
   standard Linux forensics utilities) are being used for their ordinary
   educational and forensic purposes.
@@ -43,7 +44,7 @@ reference each other.
 |---|---|---|
 | 1 | **Photo Day lvl 2** | An intercepted email with a photo attachment; metadata + basic crypto. |
 | 2 | **Stegosaurus 1** | A hidden message inside an image; a password stands between you and it. |
-| 3 | **Stegosaurus 2 (Warehouse)** | A computer-architecture puzzle: resolve an address to a physical location, then decode a cipher. A browser warehouse game accompanies it. |
+| 3 | **Stegosaurus 2 (Warehouse)** | A computer-architecture puzzle: resolve an address to a physical location, then decode a cipher. A browser warehouse game (part of the challenge environment — see below) accompanies it. |
 | 4 | **Stegosaurus 3** | One JPEG, many secrets: carve, crack, and dig through nested payloads. |
 
 Each challenge has its own briefing with the story, the files you get, and the
@@ -63,11 +64,10 @@ in-world clues:
 ## The warehouse game
 
 Challenge 3 sends you into a memory warehouse. There's a playable browser version
-you can walk through instead of (or alongside) a physical setup:
-
-- **Locally:** open [`warehouse-game/`](warehouse-game/) (start at its
-  `index.html`).
-- **Online:** <https://britt.gg/ctf/warehouse/>
+you can walk through instead of (or alongside) a physical setup. The game is part
+of the challenge **environment**, which lives at
+<https://github.com/jdtherobot/jd-ctf-environment> — and it will be playable on
+the site.
 
 Your facilitator will tell you which one you're using.
 

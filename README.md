@@ -16,12 +16,20 @@ all four challenges have automated solver tests that solve them from the player 
 
 | Folder | Who it's for | What's in it |
 |---|---|---|
-| **[`participant/`](participant/)** | Players | The four challenge files + spoiler-free briefings, a tool checklist, and the playable warehouse game. **This is the folder you hand to participants** — download or copy it as-is. |
+| **[`participant/`](participant/)** | Players | The four challenge files + spoiler-free briefings and a tool checklist. **This is the folder you hand to participants** — download or copy it as-is. |
 | **[`facilitator/`](facilitator/)** | Whoever runs it | Flags, complete walkthroughs, staged hint ladders, admin/room setup, deterministic rebuild scripts, automated solver tests, archive provenance, and the validation report. |
 
 The workflow it was designed around: **the facilitator gives the participant the contents of
 `participant/`**, then uses `facilitator/` to run the session — releasing hints in stages,
 troubleshooting dead ends, and checking answers.
+
+## Two companion pieces
+
+- **[WRITEUP.md](WRITEUP.md)** — the full story with diagrams: the theme, all four challenges, how
+  the player and facilitator sides fit together, and how it was built. *(Contains spoilers.)*
+- **[jd-ctf-environment](https://github.com/jdtherobot/jd-ctf-environment)** — the runnable
+  environment: an in-browser 32-bit Linux lab and the playable warehouse game. This repo is the
+  challenges and their documentation; that repo is where players *run* them.
 
 ## The challenges
 
@@ -40,7 +48,7 @@ Challenge 3's cipher input is line 9 of the document you recover in Challenge 2,
 tools with `participant/PLAYER_TOOLKIT.md`. You'll want `exiftool`, `openssl`, `binwalk`, `steghide`,
 `python3`, and the usual `file`/`dd`/`xxd`/`unzip`.
 
-**Running the site locally** (the guide + warehouse game, exactly as it would be published):
+**Running the guide site locally** (exactly as it would be published):
 
 ```bash
 bash deploy/pages/build.sh                       # builds deploy/pages/dist/
@@ -48,14 +56,8 @@ cd deploy/pages/dist && python3 -m http.server 8000
 # → http://localhost:8000
 ```
 
-**The in-browser lab** (optional — a 32-bit Linux terminal that runs in the browser, no install):
-
-```bash
-cd browser-lab && python3 -m http.server 8001    # → http://localhost:8001
-```
-
-Use a real server rather than opening the HTML directly; the game and lab rely on browser APIs
-that `file://` blocks.
+The in-browser lab and the warehouse game live in the
+[jd-ctf-environment](https://github.com/jdtherobot/jd-ctf-environment) repo; run them from there.
 
 ## Verifying it works
 
@@ -65,18 +67,19 @@ make scan-secrets       # checks no answers leaked into participant/
 make build-challenges   # deterministically rebuilds the challenge distributions
 ```
 
-All four solver tests pass, the warehouse game has a 27-assertion browser test, and the browser
-lab's toolchain was proven in a real 32-bit container by solving challenges 2 and 4 inside it.
-Details in [`facilitator/VALIDATION_REPORT.md`](facilitator/VALIDATION_REPORT.md).
+All four solver tests pass from the player files alone. Details in
+[`facilitator/VALIDATION_REPORT.md`](facilitator/VALIDATION_REPORT.md). (The warehouse game's
+browser test and the lab's 32-bit toolchain proof live in the
+[environment repo](https://github.com/jdtherobot/jd-ctf-environment).)
 
 ## Repository layout
 
 ```
-participant/    what players get — challenges, briefings, toolkit, warehouse game
+participant/    what players get — challenge files, briefings, tool checklist
 facilitator/    answers, walkthroughs, hint ladders, rebuild + solver tests, provenance
-browser-lab/    in-browser 32-bit Linux lab (v86) + image build recipe + feasibility proof
-deploy/         static-site bundle for publishing, and lab hosting configs
+deploy/pages/   static-site bundle for publishing the guide
 build/          archive inventory, secret-scan gate, shared build config
+WRITEUP.md      full illustrated writeup (spoilers)
 ```
 
 These challenges were reconstructed from an original run's working archive. That archive is

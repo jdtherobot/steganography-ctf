@@ -63,7 +63,6 @@ cd <repo root>
 export ARCHIVE_DIR="/Users/jdtherobot/Documents/GitHub/CTF Challenges/archive"
 make build-challenges     # runs each facilitator/challenges/NN/rebuild.sh
 make test-challenges      # solver tests assert every flag from the player files
-make warehouse-game       # builds the static warehouse game
 make scan-secrets         # PRE-PUBLISH GATE — must say: secret-scan: PASS
 make verify-archive       # confirms the archive fingerprint is unchanged
 ```
@@ -107,8 +106,10 @@ machines, `steghide` and `stegseek` are easiest via a Debian container — but o
 
 - Put each challenge's distributed file(s) in a clearly named folder
   (`01-photo-day/`, `02-stegosaurus-1/`, …) mirroring
-  `participant/challenges/NN/`, plus the shared `PLAYER_TOOLKIT.md` and the
-  warehouse game.
+  `participant/challenges/NN/`, plus the shared `PLAYER_TOOLKIT.md`. The
+  warehouse game ships from the
+  [`jd-ctf-environment`](https://github.com/jdtherobot/jd-ctf-environment) repo
+  (its `warehouse-game/` directory) — see §5.
 - Distribute read-only copies (shared drive, USB, per-seat folder, or your usual
   delivery channel). Players should copy files into a personal scratch directory
   before working, so the master stays clean.
@@ -160,8 +161,10 @@ If you can't build a physical warehouse, or you're running the event remotely,
 use the **browser warehouse game**. It simulates the same navigation: players walk
 the resolved location and find the same note.
 
-- **Local:** serve `../participant/warehouse-game/` (open its `index.html`, or
-  serve the folder with any static file server) and give players the address.
+- **Local:** clone the
+  [`jd-ctf-environment`](https://github.com/jdtherobot/jd-ctf-environment) repo
+  and serve its `warehouse-game/` directory (open its `index.html`, or serve the
+  folder with any static file server) and give players the address.
 - **Hosted:** the deployed build lives at <https://britt.gg/ctf/warehouse/>.
 
 Either way, the *puzzle* is unchanged — only the medium differs. Decide up front

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Assemble the PUBLIC GitHub Pages bundle (guide + challenges + warehouse game) for britt.gg/ctf/.
+# Assemble the PUBLIC GitHub Pages bundle (guide + challenges) for britt.gg/ctf/.
 #
 # Publishes ONLY participant/ content, and refuses to build unless the secret-scan gate passes.
 # Output: deploy/pages/dist/  — pure static (.nojekyll), host-agnostic (GH Pages, Cloudflare, etc.).

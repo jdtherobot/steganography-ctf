@@ -29,6 +29,9 @@ build/out/
 **/rb/
 *.tmp
 
+# --- Generated deploy bundle (regenerable via deploy/pages/build.sh) ---
+deploy/pages/dist/
+
 # --- Secrets must never be committed to a public deploy ---
 # (kept in creator-only build dirs; see per-challenge secret allowlists)
 **/creator-only/

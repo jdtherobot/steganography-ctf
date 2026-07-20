@@ -1,0 +1,6 @@
+# Cloudflare Pages / Netlify `_headers` — cross-origin isolation for the browser lab.
+# Required by CheerpX/WebVM (SharedArrayBuffer). NOT needed if the lab uses the v86 engine.
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Resource-Policy: same-origin

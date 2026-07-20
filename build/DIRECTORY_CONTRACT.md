@@ -32,7 +32,7 @@ participant/challenges/NN/          # SPOILER-FREE. Player-facing only.
   <distributable files>             #   e.g. email.eml, stego_badger.jpeg, Honey.jpeg
   BRIEF.md                          #   the player's briefing/prompt (no answers, no hints beyond in-story)
 
-facilitator/challenges/NN/          # PRIVATE. Answers + how it was built.
+facilitator/challenges/NN/          # Answers + how it was built. Spoilers — not handed to participants.
   WRITEUP.md                        #   full worked solution incl. the flag
   PROVENANCE.md                     #   canonical files chosen (archive path + SHA-256) + rejected revisions + why
   rebuild.sh                        #   deterministic: reads ARCHIVE_DIR, writes participant/ artifact(s)

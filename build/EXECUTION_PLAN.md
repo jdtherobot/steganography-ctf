@@ -1,13 +1,14 @@
 # Execution Plan — Stego CTF reconstruction
 
-Streamlined plan of record for finishing the four-challenge stego CTF as a clean,
-secret-free, one-private-repo project split into `participant/` and `facilitator/`.
+Streamlined plan of record for finishing the four-challenge stego CTF as a clean
+project split into `participant/` and `facilitator/`.
 
 ## Locked decisions
 
-- **One private repo**, two top-level folders: `participant/` (spoiler-free, distributable) and
-  `facilitator/` (answers, walkthroughs, build scripts). Publishing = sanitized copy of
-  `participant/` only, gated by `make scan-secrets`.
+- **One public showcase repo**, two top-level folders: `participant/` (spoiler-free — the folder a
+  facilitator hands to players) and `facilitator/` (answers, walkthroughs, build scripts). Both are
+  published: this is a portfolio piece, not a live graded event. The **website** bundle published to
+  britt.gg stays `participant/`-only, gated by `make scan-secrets`.
 - Admin folder is named **`facilitator/`**.
 - **Build the entire project** (challenges + warehouse game + docs + browser lab + deploy),
   always advancing to the next available step. Not stopping at an MVP.
@@ -55,7 +56,8 @@ archive, and re-run the full chain + a black-box secret-leak scan.
   `scan-secrets` over participant/ + `verify-archive`, assemble `VALIDATION_REPORT.md`, commit.
 - **Wave 4 — browser lab + deploy:** CheerpX/v86 feasibility spike, pick engine+host, build the
   chooser + GUI + terminal shipping only sanitized files; write `deploy/pages` + `deploy/lab`.
-- **Final (gated):** create the PRIVATE GitHub repo and push — only after explicit user confirmation.
+- **Final (gated, DONE):** published to `github.com/jdtherobot/steganography-ctf` (public) after
+  explicit user confirmation that both folders should ship.
 
 ## Boundary invariant (never violate)
 

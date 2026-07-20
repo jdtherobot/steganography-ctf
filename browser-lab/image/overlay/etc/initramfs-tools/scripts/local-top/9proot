@@ -1,0 +1,26 @@
+#!/bin/sh
+# initramfs-tools local-top hook: make root=host9p mountable under v86's virtio-9p.
+# v86 exposes the JSON/HTTP 9p filesystem with the device tag "host9p".
+#
+# With cmdline: root=host9p rootfstype=9p rootflags=trans=virtio,version=9p2000.L
+# initramfs-tools' default `local` script can't handle a non-block root, so we
+# load the transport modules early here. The actual mount is performed by the
+# `local` bottom script using ${ROOT} + ${ROOTFLAGS} from the kernel cmdline.
+PREREQ=""
+prereqs(){ echo "$PREREQ"; }
+case "$1" in prereqs) prereqs; exit 0;; esac
+
+. /scripts/functions
+
+for m in virtio virtio_ring virtio_pci 9pnet 9pnet_virtio 9p; do
+    modprobe -q "$m" 2>/dev/null || true
+done
+
+# If the root is our 9p tag, ensure sane defaults so `local` mounts it.
+case "${ROOT}" in
+    host9p|/dev/root)
+        [ -z "${ROOTFSTYPE}" ] && export ROOTFSTYPE=9p
+        [ -z "${ROOTFLAGS}" ]  && export ROOTFLAGS="-o trans=virtio,version=9p2000.L,cache=loose"
+        ;;
+esac
+exit 0

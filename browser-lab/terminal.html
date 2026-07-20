@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Badger Lab — Terminal</title>
+
+<!-- Engine + terminal renderer loaded from their public distributions (v86: BSD-2; xterm.js: MIT),
+     pinned by version/commit. For an offline / hard-pinned GitHub Pages deploy, download these four
+     files (xterm css+js, addon-fit, libv86.js) into ./vendor and repoint the src/href below.
+     Nothing here is proprietary; no CheerpX bytes are vendored. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xterm/xterm@5.5.0/css/xterm.min.css">
+<style>
+  :root{
+    --bg:#0a0d0b; --panel:#111613; --line:#20302a; --ink:#d7e2d5; --ink-dim:#8fa38c;
+    --accent:#5ef2a0; --accent-2:#f2c14e; --danger:#ff7a7a;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+    --sans:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font-family:var(--sans)}
+  body{display:flex;flex-direction:column;min-height:100vh}
+  a{color:var(--accent)}
+  .bar{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg,#0f1512,#0c110e);flex-wrap:wrap}
+  .bar .brand{font-family:var(--mono);font-weight:700;letter-spacing:.02em;display:flex;align-items:center;gap:9px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--accent-2);box-shadow:0 0 8px var(--accent-2)}
+  .dot.ok{background:var(--accent);box-shadow:0 0 8px var(--accent)}
+  .dot.err{background:var(--danger);box-shadow:0 0 8px var(--danger)}
+  .spacer{flex:1}
+  .status{font-family:var(--mono);font-size:12px;color:var(--ink-dim)}
+  button.tb,a.tb{font:600 12.5px/1 var(--sans);background:transparent;color:var(--ink);border:1px solid var(--line);
+    border-radius:9px;padding:8px 12px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:7px}
+  button.tb:hover,a.tb:hover{border-color:color-mix(in srgb,var(--accent) 45%,var(--line));color:var(--accent)}
+  button.tb.danger:hover{border-color:color-mix(in srgb,var(--danger) 55%,var(--line));color:var(--danger)}
+  button.tb:disabled{opacity:.45;cursor:not-allowed}
+
+  .stage{flex:1;display:flex;min-height:0}
+  .term-wrap{flex:1;min-width:0;position:relative;background:#000}
+  #terminal{position:absolute;inset:0;padding:8px 6px}
+  .side{width:290px;border-left:1px solid var(--line);background:var(--panel);padding:14px 14px 18px;overflow:auto}
+  @media (max-width:860px){ .side{display:none} }
+  .side h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-dim);margin:2px 0 8px}
+  .side p{font-size:12.5px;color:var(--ink-dim);margin:0 0 12px;line-height:1.5}
+  .files{list-style:none;margin:0 0 14px;padding:0}
+  .files li{font-family:var(--mono);font-size:12px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;color:var(--ink)}
+  .files li span{color:var(--ink-dim)}
+  .side code{font-family:var(--mono);font-size:11.5px;background:#0c110e;border:1px solid var(--line);padding:1px 5px;border-radius:5px}
+  kbd{font-family:var(--mono);font-size:11px;background:#0c110e;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:1px 5px}
+
+  /* boot overlay */
+  .overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(600px 300px at 50% 30%,rgba(94,242,160,.07),transparent),#000;z-index:5}
+  .overlay.hidden{display:none}
+  .boot{max-width:560px;width:calc(100% - 40px);font-family:var(--mono)}
+  .boot .title{color:var(--accent);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+  .boot .log{white-space:pre-wrap;font-size:12.5px;color:var(--ink-dim);line-height:1.6;min-height:120px}
+  .boot .bar-outer{height:6px;border:1px solid var(--line);border-radius:6px;margin-top:14px;overflow:hidden}
+  .boot .bar-inner{height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .25s}
+  .boot .hint{margin-top:12px;font-size:11.5px;color:var(--ink-dim)}
+
+  .banner{font-family:var(--mono);font-size:11.5px;padding:7px 14px;border-bottom:1px solid var(--line);
+    background:color-mix(in srgb,var(--accent-2) 9%,#0c110e);color:var(--accent-2)}
+  .banner b{color:var(--ink)}
+  .banner.ok{background:color-mix(in srgb,var(--accent) 8%,#0c110e);color:var(--accent)}
+  .noscreen{display:none}
+</style>
+</head>
+<body>
+  <div class="bar">
+    <span class="brand"><span class="dot" id="statusdot"></span> badger&nbsp;lab · terminal</span>
+    <span class="status" id="status">initializing…</span>
+    <span class="spacer"></span>
+    <button class="tb" id="btn-save" title="Snapshot the machine to this browser">💾 Save snapshot</button>
+    <button class="tb danger" id="btn-reset" title="Discard local changes and reboot a clean box">↺ Reset</button>
+    <a class="tb" href="index.html">← Lab home</a>
+  </div>
+
+  <div class="banner" id="banner">loading engine…</div>
+
+  <div class="stage">
+    <div class="term-wrap">
+      <div id="terminal"></div>
+      <div class="overlay" id="overlay">
+        <div class="boot">
+          <div class="title">▚ booting 32-bit linux · v86</div>
+          <div class="log" id="bootlog"></div>
+          <div class="bar-outer"><div class="bar-inner" id="bootbar"></div></div>
+          <div class="hint">First boot fetches the kernel + base image (a few MB). Subsequent boots are cached by your browser.</div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="side">
+      <h4>Challenge files</h4>
+      <ul class="files">
+        <li>email.eml <span>— C1</span></li>
+        <li>stego_badger.jpeg <span>— C2</span></li>
+        <li>Honey.jpeg <span>— C4</span></li>
+        <li>wordlist.txt <span>— cracking</span></li>
+        <li>BRIEF-*.md <span>— tasks</span></li>
+      </ul>
+      <p>On the lab image these sit in <code>~/challenges</code>. C3 (the Memory Warehouse) is solved with the companion game, not a file.</p>
+      <h4>Quick start</h4>
+      <p><code>cd ~/challenges</code><br>
+      <code>exiftool stego_badger.jpeg</code><br>
+      <code>binwalk Honey.jpeg</code></p>
+      <h4>Controls</h4>
+      <p><kbd>Ctrl</kbd>+<kbd>C</kbd> interrupts. Paste with your OS shortcut. <b>Save snapshot</b> persists the whole box to this browser; <b>Reset</b> throws the snapshot away and reboots clean.</p>
+    </aside>
+  </div>
+
+  <div class="noscreen" id="fallback"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@xterm/xterm@5.5.0/lib/xterm.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@xterm/addon-fit@0.10.0/lib/addon-fit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/v86@0.5.424/build/libv86.js"></script>
+<script>
+"use strict";
+(function(){
+  // ---------------------------------------------------------------------------
+  // CONFIG — where the engine + images come from.
+  // ---------------------------------------------------------------------------
+  // BIOS blobs aren't in the npm package, so they're pinned to an immutable v86
+  // commit via jsdelivr-gh. libv86.js + v86.wasm come from the npm build.
+  var V86_SHA = "2f1346b0e7d88d4cbbbcc05fe15b4e369c3de23f";
+  var CDN = {
+    wasm:    "https://cdn.jsdelivr.net/npm/v86@0.5.424/build/v86.wasm",
+    seabios: "https://cdn.jsdelivr.net/gh/copy/v86@" + V86_SHA + "/bios/seabios.bin",
+    vgabios: "https://cdn.jsdelivr.net/gh/copy/v86@" + V86_SHA + "/bios/vgabios.bin",
+  };
+
+  // Two boot targets. The harness ships pointed at BASE, which is a small,
+  // known-good, CORS-open image proven to boot a real Linux shell in-browser —
+  // so "Launch Terminal" always works. LAB is the production image built by
+  // ../image/ (Debian i386 + full toolkit + challenge files baked in); flip
+  // ACTIVE to "lab" once that image is hosted alongside this page.
+  var IMAGES = {
+    base: {
+      // Same-origin vendored kernel. i.copy.sh hotlink-blocks cross-origin browser
+      // requests (403), so this file is served next to the page. build-image.sh /
+      // README document fetching it into ./vendor at deploy time.
+      label: "base OS (busybox) — engine demo",
+      kind: "bzimage-url",
+      bzimage: "./vendor/buildroot-bzimage68.bin",
+      cmdline: "tsc=reliable mitigations=off random.trust_cpu=on",
+      hasToolkit: false,
+    },
+    lab: {
+      // Produced by ../image/build-image.sh -> fs.json + flat/ (+ 9p-capable bzImage).
+      label: "badger lab image — full toolkit",
+      kind: "9p-filesystem",
+      baseurl: "./image/dist/flat",
+      basefs:  "./image/dist/fs.json",
+      cmdline: "rw root=host9p rootfstype=9p rootflags=trans=virtio,cache=loose modules=virtio_pci tsc=reliable",
+      hasToolkit: true,
+    },
+  };
+  var ACTIVE = "base";   // <-- switch to "lab" when ./image/dist is deployed
+  var img = IMAGES[ACTIVE];
+
+  var STATE_DB = "badgerlab-state", STATE_KEY = "v86-snapshot";
+
+  // ---------------------------------------------------------------------------
+  var $ = function(id){ return document.getElementById(id); };
+  var bootlog = $("bootlog"), bootbar = $("bootbar");
+  var statusEl = $("status"), dot = $("statusdot"), banner = $("banner");
+  var logLines = [], progress = 0;
+  function blog(s){ logLines.push(s); bootlog.textContent = logLines.slice(-8).join("\n"); }
+  function setBar(p){ progress=Math.max(progress,p); bootbar.style.width = Math.min(100,progress)+"%"; }
+  function setStatus(s, cls){ statusEl.textContent=s; dot.className="dot"+(cls?(" "+cls):""); }
+
+  if(typeof V86 === "undefined"){
+    banner.textContent = "Engine failed to load. Check your network / CDN access and reload.";
+    banner.style.color = "var(--danger)";
+    setStatus("engine unavailable","err");
+    blog("ERROR: libv86.js did not load.");
+    return;
+  }
+
+  banner.innerHTML = img.hasToolkit
+    ? "<b>Lab image</b> — full forensic toolkit + challenge files in <code>~/challenges</code>."
+    : "Running the <b>base OS</b> (engine demo). The full toolkit lives on the <b>lab image</b> built by <code>../image/</code> — see ENGINE_DECISION.md. This proves the in-browser terminal boots.";
+  banner.className = "banner" + (img.hasToolkit ? " ok" : "");
+
+  // --- terminal (xterm.js) ---------------------------------------------------
+  var term = new Terminal({
+    convertEol:false, cursorBlink:true, fontFamily:"var(--mono)", fontSize:14,
+    theme:{ background:"#000000", foreground:"#d7e2d5", cursor:"#5ef2a0",
+            green:"#5ef2a0", brightGreen:"#7dffb8", yellow:"#f2c14e" },
+    scrollback:5000,
+  });
+  var fit = new FitAddon.FitAddon();
+  term.loadAddon(fit);
+  term.open($("terminal"));
+  try{ fit.fit(); }catch(e){}
+
+  // --- emulator config -------------------------------------------------------
+  var cfg = {
+    wasm_path: CDN.wasm,
+    memory_size: 256 * 1024 * 1024,
+    vga_memory_size: 4 * 1024 * 1024,
+    bios: { url: CDN.seabios },
+    vga_bios: { url: CDN.vgabios },
+    cmdline: img.cmdline,
+    autostart: true,
+    disable_keyboard: true,          // serial is our console
+    disable_speaker: true,
+  };
+  if(img.kind === "bzimage-url"){
+    cfg.bzimage = { url: img.bzimage, async:false };
+    cfg.filesystem = {};
+  } else {
+    cfg.filesystem = { baseurl: img.baseurl, basefs: img.basefs };
+    cfg.bzimage_initrd_from_filesystem = true;
+  }
+
+  blog("engine: v86 (wasm)  ·  image: "+img.label);
+  blog("fetching bios + kernel…");
+  setBar(8); setStatus("booting…");
+
+  var emulator;
+  try{
+    emulator = new V86(cfg);
+  }catch(err){
+    banner.textContent = "Boot failed: "+err; banner.style.color="var(--danger)";
+    setStatus("boot error","err"); blog("ERROR: "+err); return;
+  }
+  window._emulator = emulator;
+
+  // progress signals
+  emulator.add_listener("download-progress", function(e){
+    if(e && e.total){ setBar(8 + Math.round((e.loaded/e.total)*46)); }
+  });
+  emulator.add_listener("download-error", function(e){
+    blog("download error: "+(e && e.file_name ? e.file_name : "asset"));
+    banner.textContent="A boot asset failed to download (network/CORS). Reload to retry.";
+    banner.style.color="var(--danger)"; setStatus("download error","err");
+  });
+
+  // --- serial console wiring -------------------------------------------------
+  var sawOutput=false, bootDone=false;
+  function finishBoot(){
+    if(bootDone) return; bootDone=true;
+    setBar(100); $("overlay").classList.add("hidden");
+    setStatus("running","ok"); term.focus();
+    try{ fit.fit(); sendResize(); }catch(e){}
+  }
+  emulator.add_listener("serial0-output-byte", function(byte){
+    var ch = String.fromCharCode(byte);
+    if(!sawOutput){ sawOutput=true; setBar(60); setStatus("kernel up — starting shell…"); }
+    term.write(ch);
+    // Reveal the terminal as soon as we see the first interactive prompt.
+    if(!bootDone && (ch==="$" || ch==="#" || ch==="%")){ setTimeout(finishBoot, 350); }
+  });
+  // Safety: reveal after boot regardless, so users are never stuck on the overlay.
+  // The lab (Debian/systemd) image boots slower than the busybox base, so give it room.
+  setTimeout(function(){ if(sawOutput) finishBoot(); }, 9000);
+  setTimeout(function(){ finishBoot(); }, img.hasToolkit ? 60000 : 25000);
+
+  term.onData(function(data){ emulator.serial0_send(data); });
+
+  function sendResize(){
+    // best-effort: tell the guest our terminal size via stty once shell is up
+    if(bootDone) emulator.serial0_send("stty cols "+term.cols+" rows "+term.rows+" 2>/dev/null\n");
+  }
+  addEventListener("resize", function(){ try{ fit.fit(); }catch(e){} });
+
+  // --- persistence: snapshot to IndexedDB ------------------------------------
+  function idb(){ return new Promise(function(res,rej){
+    var r=indexedDB.open(STATE_DB,1);
+    r.onupgradeneeded=function(){ r.result.createObjectStore("s"); };
+    r.onsuccess=function(){ res(r.result); }; r.onerror=function(){ rej(r.error); };
+  });}
+  function idbPut(k,v){ return idb().then(function(db){ return new Promise(function(res,rej){
+    var tx=db.transaction("s","readwrite"); tx.objectStore("s").put(v,k);
+    tx.oncomplete=function(){res();}; tx.onerror=function(){rej(tx.error);};
+  });});}
+  function idbGet(k){ return idb().then(function(db){ return new Promise(function(res,rej){
+    var tx=db.transaction("s","readonly"); var g=tx.objectStore("s").get(k);
+    g.onsuccess=function(){res(g.result);}; g.onerror=function(){rej(g.error);};
+  });});}
+  function idbDel(k){ return idb().then(function(db){ return new Promise(function(res,rej){
+    var tx=db.transaction("s","readwrite"); tx.objectStore("s").delete(k);
+    tx.oncomplete=function(){res();}; tx.onerror=function(){rej(tx.error);};
+  });});}
+
+  $("btn-save").addEventListener("click", function(){
+    if(!bootDone){ return; }
+    setStatus("saving snapshot…");
+    emulator.save_state().then(function(state){
+      return idbPut(STATE_KEY, new Uint8Array(state));
+    }).then(function(){
+      setStatus("snapshot saved","ok");
+      banner.classList.add("ok");
+      banner.innerHTML = "Snapshot saved to this browser. It will restore on your next visit. <code>Reset</code> discards it.";
+    }).catch(function(e){ setStatus("save failed","err"); blog("save error: "+e); });
+  });
+
+  $("btn-reset").addEventListener("click", function(){
+    if(!confirm("Reset the lab? This discards your saved snapshot and all changes, then reboots a clean box.")) return;
+    idbDel(STATE_KEY).then(function(){ location.reload(); }).catch(function(){ location.reload(); });
+  });
+
+  // Restore a previous snapshot if present (after the machine exists).
+  emulator.add_listener("emulator-ready", function(){
+    idbGet(STATE_KEY).then(function(saved){
+      if(saved && saved.byteLength){
+        blog("restoring saved snapshot ("+(saved.byteLength/1048576).toFixed(1)+" MB)…");
+        emulator.restore_state(saved.buffer).then(function(){
+          setStatus("restored snapshot","ok");
+        }).catch(function(e){ blog("restore failed, clean boot: "+e); });
+      }
+    }).catch(function(){});
+  });
+})();
+</script>
+</body>
+</html>

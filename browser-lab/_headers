@@ -1,0 +1,10 @@
+# Cloudflare Pages (or any header-capable host) — enables cross-origin isolation so
+# the CheerpX graphical Desktop can use SharedArrayBuffer. GitHub Pages cannot set these,
+# which is why the shipping lab uses v86 (no headers needed). See ENGINE_DECISION.md.
+#
+# COEP require-corp is the standard CheerpX setting. If third-party CDN assets without a
+# Cross-Origin-Resource-Policy header get blocked, switch to `credentialless`.
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+  Cross-Origin-Resource-Policy: same-origin

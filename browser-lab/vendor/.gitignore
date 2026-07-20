@@ -1,0 +1,3 @@
+# Boot blobs are large and vendored at deploy time — never committed.
+*
+!.gitignore

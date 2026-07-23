@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="440" viewBox="0 0 640 440">
+  <!-- Warehouse field-note: earned at Row 2 / Shelf 1 / Section 2 (back) / Sub-section 1 / Box 5.
+       Corner words key the four-square (TL=Honey TR=Badger BL=Heck BR=Yeah); "dCode" points at
+       dcode.fr's Four-Square tool; "Line #9" points at line 9 of the Steganography lvl 2 document. -->
+  <rect x="8" y="8" width="624" height="424" rx="14" fill="#faf7ef" stroke="#3a3a3a" stroke-width="3"/>
+  <rect x="22" y="22" width="596" height="396" rx="8" fill="none" stroke="#8a7f66" stroke-width="1.5" stroke-dasharray="4 5"/>
+  <g font-family="Georgia, 'Times New Roman', serif" fill="#241f18">
+    <text x="60"  y="86"  font-size="40" font-weight="bold">Honey</text>
+    <text x="580" y="86"  font-size="40" font-weight="bold" text-anchor="end">Badger</text>
+    <text x="60"  y="392" font-size="40" font-weight="bold">Heck</text>
+    <text x="580" y="392" font-size="40" font-weight="bold" text-anchor="end">Yeah</text>
+    <text x="320" y="205" font-size="34" font-weight="bold" text-anchor="middle" letter-spacing="1">dCode</text>
+    <text x="320" y="250" font-size="34" text-anchor="middle" letter-spacing="6">&#9634; &#9634; &#9634; &#9634;</text>
+    <text x="320" y="298" font-size="26" text-anchor="middle" font-style="italic">Line #9</text>
+  </g>
+</svg>

@@ -1,118 +1,42 @@
-# Stego CTF — Player Handbook
+# Steganography CTF — Player Guide
 
-Welcome, analyst. You've been handed a small stack of intercepted files and a
-puzzle warehouse. Somewhere inside each one is a hidden flag. Your job is to pull
-it out.
+A four-challenge capture-the-flag covering steganography, cryptography, file
+carving, metadata forensics, and a little computer architecture. Everything is
+solvable offline with the files in this folder and a standard forensics toolkit.
 
-This is a **steganography and cryptography capture-the-flag** built around four
-self-contained challenges. It rewards curiosity, patience, and a willingness to
-read a file byte-by-byte when it refuses to give up its secret. No prior CTF
-experience is required — just the toolkit listed in
-[`PLAYER_TOOLKIT.md`](PLAYER_TOOLKIT.md) and a habit of asking "what *else* is in
-this file?"
+## Before you start
 
----
+- This is an authorized, self-contained exercise. Everything you need is a local
+  file supplied here (plus, for the Warehouse, a companion game your facilitator
+  will point you to). Nothing here asks you to touch a third-party system, a live
+  service, or a real account. Any password cracking applies only to the
+  deliberately weak, planted secrets in these files.
+- **Set up your tools** — see [`TOOLKIT.md`](TOOLKIT.md) and run the one-line
+  check for each.
+- **Keep an untouched original** of every file and work on copies; carving and
+  extraction are unforgiving.
 
-## Academic-use note (read me first)
+## The challenges
 
-This is an **authorized, academic exercise** created and owned by the event
-author. It exists to teach steganography, cryptography, file analysis, metadata
-inspection, data carving, and a little computer architecture — in a controlled,
-consent-based setting.
-
-- Everything you need is a **local file** supplied with this bundle (plus an
-  optional browser warehouse game, part of the separate challenge environment).
-  Nothing here asks you to touch a third-party system, a live service, someone
-  else's account, or any real security control.
-- The tools you'll use (ExifTool, OpenSSL, Binwalk, Steghide/Stegseek, and
-  standard Linux forensics utilities) are being used for their ordinary
-  educational and forensic purposes.
-- Any password cracking is limited to the **deliberately weak, planted secrets**
-  in these challenge files and the wordlists shipped with the exercise. Do not
-  point these techniques at anything you were not given here.
-
-Play locally, have fun, and keep it inside the sandbox.
-
----
-
-## The four challenges
-
-Work through them roughly in order — the difficulty ramps, and a couple of them
-reference each other.
-
-| # | Title | What you're up against |
+| # | Title | What you'll do |
 |---|---|---|
-| 1 | **Photo Day lvl 2** | An intercepted email with a photo attachment; metadata + basic crypto. |
-| 2 | **Stegosaurus 1** | A hidden message inside an image; a password stands between you and it. |
-| 3 | **Stegosaurus 2 (Warehouse)** | A computer-architecture puzzle: resolve an address to a physical location, then decode a cipher. A browser warehouse game (part of the challenge environment — see below) accompanies it. |
-| 4 | **Stegosaurus 3** | One JPEG, many secrets: carve, crack, and dig through nested payloads. |
+| 1 | **Steganography lvl 1** | Read an intercepted email and recover a flag hidden in a photo's metadata. |
+| 2 | **Steganography lvl 2** | Crack a passphrase and extract a file hidden inside an image. |
+| 3 | **Steganography lvl 3** | Take apart one JPEG that's hiding far more than it shows. |
+| 4 | **Computer Architecture Warehouse** | Walk a virtual address through the page tables to a physical box, then read the note you find. |
 
-Each challenge has its own briefing with the story, the files you get, and the
-in-world clues:
+**Order matters for the Warehouse.** Challenge 4 uses something you recover while
+solving Challenge 2, so do **lvl 2 before the Warehouse**. The rest stand on their own.
 
-- [`challenges/01-photo-day/BRIEF.md`](challenges/01-photo-day/BRIEF.md)
-- [`challenges/02-stegosaurus-1/BRIEF.md`](challenges/02-stegosaurus-1/BRIEF.md)
-- [`challenges/03-stegosaurus-2-warehouse/BRIEF.md`](challenges/03-stegosaurus-2-warehouse/BRIEF.md)
-- [`challenges/04-stegosaurus-3/BRIEF.md`](challenges/04-stegosaurus-3/BRIEF.md)
+## Flags & rules
 
-> **Order matters for #3.** Challenge 3 needs something you'll uncover while
-> solving Challenge 2, so tackle 2 before 3. Challenge 4 stands on its own but
-> shares the same mischievous sense of humor as the rest.
+- Flags look like `Flag{...}`. Submit the whole string exactly — capitalization,
+  spaces, and symbols all matter.
+- **Work locally.** Every challenge is solvable offline with the files you were given.
+- **In-story clues are fair game.** If an email body, a file, or a note seems to be
+  *telling* you something — a password, a line number, a keyword — that's intentional.
+- **Don't brute-force the flag format.** Recover flags from the files, not by guessing.
+- **Stuck?** Each challenge has optional hints in its `hints/` folder, and your
+  facilitator can give you more.
 
----
-
-## The warehouse game
-
-Challenge 3 sends you into a memory warehouse. There's a playable browser version
-you can walk through instead of (or alongside) a physical setup. The game is part
-of the challenge **environment**, which lives at
-<https://github.com/jdtherobot/jd-ctf-environment> — and it will be playable on
-the site.
-
-Your facilitator will tell you which one you're using.
-
----
-
-## Getting started
-
-1. **Set up your toolkit.** Open [`PLAYER_TOOLKIT.md`](PLAYER_TOOLKIT.md) and run
-   the one-line "is it installed?" check for each tool. Install anything that's
-   missing before you start. A Kali Linux box (or any Linux/WSL/macOS shell) has
-   nearly all of it already.
-2. **Copy the challenge files somewhere you can work.** Make a scratch folder per
-   challenge and copy the distributed files into it, so you always have a clean
-   original to fall back to.
-3. **Read the briefing** for the challenge you're attacking
-   (`challenges/NN/BRIEF.md`). The story usually *is* the hint.
-4. **Poke at the file.** Identify what it really is, look at its metadata, and ask
-   what might be hidden inside. Then follow the trail.
-
----
-
-## Rules & conventions
-
-- **Work locally.** Every challenge is solvable entirely offline with the files
-  you were given and the tools in the toolkit. You never need to attack a remote
-  host, and you shouldn't.
-- **Flags look like `Flag{...}`.** When you find one, that whole string —
-  including the `Flag{` and `}` — is the answer. Submit it exactly as it appears,
-  respecting capitalization, spaces, and symbols.
-- **Keep an original copy** of each file. Steganography work is destructive to
-  the unwary; carving and extraction go a lot smoother when you can start over.
-- **In-story clues are fair game.** If a file's contents, an email body, or a
-  note in the warehouse seems to be *telling* you something — a password, a line
-  number, a keyword — that's intentional. Use it.
-- **Don't brute-force the flag format.** Guessing `Flag{...}` strings isn't the
-  game; recovering them from the files is.
-- **Stuck?** Ask your facilitator for a hint. Hints are released in stages so you
-  get just enough of a nudge without spoiling the solve.
-
----
-
-## Where to go next
-
-- **[`PLAYER_TOOLKIT.md`](PLAYER_TOOLKIT.md)** — the environment checklist and
-  install checks. Do this first.
-- **Each `challenges/NN/BRIEF.md`** — the per-challenge briefings linked above.
-
-Good hunting. Rock on. 🦡
+Good hunting.

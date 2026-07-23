@@ -1,4 +1,8 @@
-# Player Toolkit
+# Toolkit (facilitator reference)
+
+> **Facilitator-only.** Don't hand this to players — part of each challenge is working
+> out *which* tools fit what they were given. Use it to help a stuck team, or to set up
+> the environment.
 
 The standard file-forensics kit. **Kali Linux** has almost all of it preinstalled;
 any Linux, WSL2 on Windows, or macOS with Homebrew works too. Run each one-line

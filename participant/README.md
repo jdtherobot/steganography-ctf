@@ -11,8 +11,8 @@ solvable offline with the files in this folder and a standard forensics toolkit.
   will point you to). Nothing here asks you to touch a third-party system, a live
   service, or a real account. Any password cracking applies only to the
   deliberately weak, planted secrets in these files.
-- **Set up your tools** — see [`TOOLKIT.md`](TOOLKIT.md) and run the one-line
-  check for each.
+- **Bring a standard Linux file-forensics environment** (Kali is ideal). Part of
+  each challenge is working out *which* tools fit what you were handed.
 - **Keep an untouched original** of every file and work on copies; carving and
   extraction are unforgiving.
 

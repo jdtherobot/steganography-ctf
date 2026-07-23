@@ -68,8 +68,8 @@ narration (a tale about *"John,"* from the Desert Storm days, and his friends *A
 and Kernighan* → `awk`) teaches you to *build* the password: a codename, a `#`, two digits, and
 a three-letter mixed-case tag — mask `?d?d?l?u?l`.
 
-*(Full carve-and-decrypt chain and the exact flag are pinned in the facilitator writeup, being
-re-verified against the author's original carrier.)*
+*(Full carve-and-decrypt chain and the exact flag are in the facilitator writeup; the whole
+chain is verified end-to-end against the author's original carrier.)*
 
 ## ④ Computer Architecture Warehouse
 

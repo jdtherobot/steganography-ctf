@@ -13,8 +13,8 @@ supplied local files.
 
 | Folder | Who it's for | What's in it |
 |---|---|---|
-| **[`participant/`](participant/)** | Players | The challenge files, a spoiler-free brief per challenge, optional hints, and a tool checklist. **Hand this folder to participants as-is.** |
-| **[`facilitator/`](facilitator/)** | Whoever runs it | Flags, full walkthroughs (author's own setup + solve steps), the author's master documents, the printable warehouse note, per-challenge solver tests, and run-day logistics. |
+| **[`participant/`](participant/)** | Players | The challenge files, a spoiler-free brief per challenge, and optional hints. **Hand this folder to participants as-is.** |
+| **[`facilitator/`](facilitator/)** | Whoever runs it | Flags, full walkthroughs (author's own setup + solve steps), the author's master documents, the printable warehouse note, per-challenge solver tests, a tool checklist, and run-day logistics. |
 
 ## The challenges
 

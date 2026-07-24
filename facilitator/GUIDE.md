@@ -63,5 +63,4 @@ Full walk + the four-square decode in the Warehouse WRITEUP.
 
 Every challenge, image, payload, password, and flag here is author-created and author-owned.
 The player-facing text is exactly what participants received in the original event; the
-setup/solve walkthroughs are the author's own. `facilitator/originals/` holds the author's
-master documents verbatim.
+setup/solve walkthroughs are the author's own.

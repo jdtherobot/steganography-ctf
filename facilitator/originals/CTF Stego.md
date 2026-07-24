@@ -121,7 +121,7 @@ Exact same photo from Challenge 2 will be here.  If they completed Challenge 2, 
    - Create random.bin 
      `openssl rand -out random.bin 4096`
    - Create STEGO_KEY.txt or otherwise document the key
-    For my exercise, I use keyblock.txt for the exact key, and I have STEGO_KEY_386.txt as a hint for the users, the key is found inside but needs the player to solve. The player does not get keyblock.txt
+    For my exercise, I use keyblock.txt for the exact key, and I have STEGO_KEY_368.txt as a hint for the users, the key is found inside but needs the player to solve. The player does not get keyblock.txt
    - Save helper script qtbl_stego.py (JPEG Quantization-Table stego helper)
     I use this script to embed data in the qtbl, I give a duplicate to the player named qtbl.py with the instructions removed to make it more difficult to analyze. The player does not get 'qtbl_stego.py'
    
@@ -131,7 +131,7 @@ Exact same photo from Challenge 2 will be here.  If they completed Challenge 2, 
    - Zip do_not_open.txt → mid.zip (leave unencrypted)
    'zip -j mid.zip do_not_open.txt'
    - Do not zip passwords.txt; we will encrypt it and zip that into a bundle later
-   - We will zip secret.txt + qtbl.py + STEGO_KEY_386.txt later. (this is how players obtain the helper script and solve a small puzzle for the stego key)
+   - We will zip secret.txt + qtbl.py + STEGO_KEY_368.txt later. (this is how players obtain the helper script and solve a small puzzle for the stego key)
 
 3. Encrypt with OpenSSL (binary, not base64)
    - Real flag ZIP → payload.enc using a strong, non-guessable password (PASSWORD)  
@@ -172,8 +172,8 @@ IVHEX=$(xxd -p iv.bin | tr -d '\n')
 ### 5) encrypt passwords.txt with raw AES key (no passphrase) using AES-256-CBC and the IV
 openssl enc -aes-256-cbc -in passwords.txt -out passwords.enc -K "$KEYHEX" -iv "$IVHEX"
 
-### 6) Build the secret bundle **including** passwords.enc + secret.enc + iv.bin + qtbl.py + STEGO_KEY_386.txt
-    'zip -j secret_bundle.zip qtbl.py STEGO_KEY_386.txt secret.enc passwords.enc iv.bin'
+### 6) Build the secret bundle **including** passwords.enc + secret.enc + iv.bin + qtbl.py + STEGO_KEY_368.txt
+    'zip -j secret_bundle.zip qtbl.py STEGO_KEY_368.txt secret.enc passwords.enc iv.bin'
 
 ### 7) Weakly encrypt the bundle so players can crack it
 openssl enc -aes-256-cbc -pbkdf2 -salt -pass pass:DesertStorm#82pLm -in secret_bundle.zip -out secret.enc

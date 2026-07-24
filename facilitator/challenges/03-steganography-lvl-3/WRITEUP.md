@@ -65,11 +65,10 @@ key = R3‖R6‖R8 = QZFCUPBAFMCKZSHSKOSQURRJPAXUFABOGAZEJEQANIZEYABOUPNAHLNSIBE
 This equals the creator-only `keyblock.txt` byte-for-byte. (`qtbl.py` XORs the first 32 bytes against
 the payload.)
 
-> **Naming — resolved.** The bundle's hint file is `STEGO_KEY_368.txt`: the digits `368` are the record
+> **Naming — resolved.** The hint file is `STEGO_KEY_368.txt` throughout: the digits `368` are the record
 > numbers **in reference order** (record 3, then 6, then 8), which is exactly how `keyblock.txt` is built
-> (verified). The author's original SOP in `originals/challenge4.md` still labels it `STEGO_KEY_386.txt` —
-> that digit-order was the mislabel this corrects; the crypto always used 3→6→8, so `386` would have sent
-> a player to records 3-8-6 and produced a wrong key.
+> (verified). Earlier drafts labeled it `386` — that digit-order was a mislabel; the crypto always used
+> 3→6→8, so `386` would have sent a player to records 3-8-6 and produced a wrong key.
 
 ## Recover the AES key and unwind
 

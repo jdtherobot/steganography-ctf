@@ -4,7 +4,7 @@
 > This explains **every** challenge end to end, including the flags. To *play*, stop here and
 > grab [`participant/`](participant/) instead.
 
-A four-challenge CTF built around a running joke: a signals unit that is very good at hiding
+A four-challenge CTF built around a running joke: a comms unit that is very good at hiding
 things and very bad at keeping secrets. You pull ciphertext out of a photo's metadata, crack a
 hidden message, take apart one JPEG that is secretly several files, and — for the real nerds —
 walk a virtual address through the page tables to a physical box in a warehouse. Every flag

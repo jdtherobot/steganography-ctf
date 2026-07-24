@@ -2,5 +2,5 @@
 
 Have you beaten **Steganography lvl 2**?
 
-This challenge stars the exact same photo — and if you kept everything that
-challenge gave you, the end of this one gets a lot easier.
+This challenge reuses the exact same **document** you pulled out of lvl 2 — and if
+you kept it, the end of this one gets a lot easier.

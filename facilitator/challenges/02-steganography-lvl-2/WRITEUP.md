@@ -42,7 +42,7 @@ The extracted document is load-bearing beyond line 1:
 - **Line 9** (`UPNAHLNSIBESOLTUEBUPDNEY`) is the **Computer Architecture Warehouse**
   four-square ciphertext.
 - The **201 filler strings** (lines 2–202) are the same 24-character records that make
-  up **Steganography lvl 3**'s `STEGO_KEY_386.txt`. That is why the Warehouse hint asks
+  up **Steganography lvl 3**'s `STEGO_KEY_368.txt`. That is why the Warehouse hint asks
   *"have you beaten lvl 2?"* — a player who kept this document is holding key material for
   two later challenges.
 

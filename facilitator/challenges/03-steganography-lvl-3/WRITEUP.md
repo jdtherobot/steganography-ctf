@@ -2,12 +2,14 @@
 
 **FACILITATOR ONLY — contains the flag and every secret. Never hand to players.**
 
-Verified end-to-end against the author's original `Challenge 4v2` carrier (see **Verification**).
+Verified end-to-end (see **Verification**). The shipped `Honey.jpeg` is a faithful rebuild of the
+author's `Challenge 4v2` carrier with the bundle's hint file renamed `STEGO_KEY_386.txt` →
+`STEGO_KEY_368.txt` so its digits match the 3→6→8 solve order; nothing else changed.
 
 | | |
 |---|---|
 | Technique | one JPEG = several concatenated payloads → carve → *reasoned* crack → QTABLE-stego AES key → nested AES |
-| Distributable | `Honey.jpeg` (author's original carrier, 277,286 B — includes the `secret.txt` marker) |
+| Distributable | `Honey.jpeg` (277,078 B — faithful rebuild of the author's carrier; only the bundle's hint file was renamed 386→368) |
 | Flag | `Flag{Y0u haVe EnCouNTeR3d a w!Ld s1eEP p@RA1y$!S DEm0n}` |
 | Tools | `binwalk`, `dd`, `openssl`, `unzip`, `xxd`, `python3`, `awk`, `file` |
 
@@ -17,7 +19,7 @@ Verified end-to-end against the author's original `Challenge 4v2` carrier (see *
 strong payload password (pw.txt):  L35f#t8w2&(X$MK8:`SPXa=WV{F%L1G7u8@[>6yI;<N=]=e5#5
 weak layer  (secret.enc):          DesertStorm#82pLm      ← reasoned, NOT brute-forced
 random decoy (decoy_random.enc):   P@$$w0rd1!
-stego key   (keyblock.txt):        records 3·6·8 of STEGO_KEY_386.txt (see below)
+stego key   (keyblock.txt):        records 3·6·8 of STEGO_KEY_368.txt (see below)
 ```
 
 ## Carrier layout (author's assembly)
@@ -41,19 +43,19 @@ password for `secret.enc`, not wordlist-crack it:
 → **`DesertStorm#82pLm`**:
 ```
 openssl enc -d -aes-256-cbc -pbkdf2 -pass pass:'DesertStorm#82pLm' -in secret.enc -out secret_bundle.zip
-unzip secret_bundle.zip     # → qtbl.py, STEGO_KEY_386.txt, passwords.enc, iv.bin
+unzip secret_bundle.zip     # → qtbl.py, STEGO_KEY_368.txt, passwords.enc, iv.bin
 ```
 > This reason-it-out design is the author's intent; it replaces the earlier reconstruction's
 > `desertstorm` + rockyou, which broke the clue chain.
 
-## The stego key — "386" (ties back to lvl 2)
+## The stego key — "368" (ties back to lvl 2)
 
-`STEGO_KEY_386.txt` is a single 4,824-char line = **201 × 24-char records, and they are exactly the
+`STEGO_KEY_368.txt` is a single 4,824-char line = **201 × 24-char records, and they are exactly the
 201 filler lines the player already saw in lvl 2** (verified equal). That is why the Warehouse hint
 asks "beat lvl 2 first."
 
-The **digits of `386` are the record numbers {3, 6, 8}**; concatenate those three records **in
-ascending order**:
+The **filename digits `368` are the record numbers, in reference order: record 3, then 6, then 8.**
+Concatenate those three records in that order:
 ```
 record 3 = QZFCUPBAFMCKZSHSKOSQURRJ
 record 6 = PAXUFABOGAZEJEQANIZEYABO
@@ -63,11 +65,11 @@ key = R3‖R6‖R8 = QZFCUPBAFMCKZSHSKOSQURRJPAXUFABOGAZEJEQANIZEYABOUPNAHLNSIBE
 This equals the creator-only `keyblock.txt` byte-for-byte. (`qtbl.py` XORs the first 32 bytes against
 the payload.)
 
-> **Naming note for the author:** the file is `STEGO_KEY_386.txt` but the key concatenates the records
-> in **ascending** order (3, 6, 8), not the literal digit order 3-8-6. It solves either way only if a
-> player sorts; a player who reads "386" as a literal order and tries 3-8-6 first will get a wrong key
-> and have to reorder. Kept exactly as you authored it — flagging in case you'd rather rename it
-> `STEGO_KEY_368.txt` (or add a word to the clue). No change made without your say-so.
+> **Naming — resolved.** The bundle's hint file is `STEGO_KEY_368.txt`: the digits `368` are the record
+> numbers **in reference order** (record 3, then 6, then 8), which is exactly how `keyblock.txt` is built
+> (verified). The author's original SOP in `originals/challenge4.md` still labels it `STEGO_KEY_386.txt` —
+> that digit-order was the mislabel this corrects; the crypto always used 3→6→8, so `386` would have sent
+> a player to records 3-8-6 and produced a wrong key.
 
 ## Recover the AES key and unwind
 
@@ -95,7 +97,7 @@ unzip -p payload.zip flag.txt        # → the flag
 
 ## Player-vs-creator files
 
-- **Players obtain** (only after cracking `secret.enc`): `qtbl.py`, `STEGO_KEY_386.txt`,
+- **Players obtain** (only after cracking `secret.enc`): `qtbl.py`, `STEGO_KEY_368.txt`,
   `passwords.enc`, `iv.bin`.
 - **Creator-only, never shipped:** `keyblock.txt`, `qtbl_stego.py`, `passwords.txt` (plaintext),
   `aeskey.bin`, `pw.txt`, `flag.txt`.
@@ -103,7 +105,7 @@ unzip -p payload.zip flag.txt        # → the flag
 ## Verification (done, in-sandbox, from the author's originals)
 
 1. `secret.enc` decrypts with the reasoned `DesertStorm#82pLm` → the four-file bundle. ✅
-2. `STEGO_KEY_386.txt` records == lvl-2's 201 filler records. ✅
+2. `STEGO_KEY_368.txt` records == lvl-2's 201 filler records. ✅
 3. `keyblock.txt` == `R3‖R6‖R8` (records 3·6·8 ascending). ✅
 4. `qtbl.py extract` on the inner JPEG with that key recovers `aeskey.bin` byte-for-byte
    (`a1f88de3…342160`). ✅

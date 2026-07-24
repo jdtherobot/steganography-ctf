@@ -25,8 +25,8 @@
    exiftool outputImage.jpeg | grep -i comment
    ```
 4. **Wrap it in an email** whose body leaks the password. Generator: the
-   `# --- settings you can change ---` script — FROM *"Secretary of Watermelon
-   \<Peter@military.signal\>"*, TO *"Mr. Tema"*, SUBJECT *"Photo Message!"*, the
+   `# --- settings you can change ---` script — FROM *"Commander, 256 AES
+   \<cmdr@military.aes\>"*, TO *"Mr. Tema"*, SUBJECT *"Photo Message!"*, the
    password leaked as *"Definitely not the password: …"*, photo base64-attached.
 
 ## Player steps (intended solve)

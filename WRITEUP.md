@@ -33,7 +33,7 @@ already holding key material for lvl 3.
 
 ## ① Steganography lvl 1
 
-An intercepted email from the *"Secretary of Watermelon"* to *"Mr. Tema,"* gushing about the
+An intercepted email from the *"Commander, 256 AES"* to *"Mr. Tema,"* gushing about the
 squadron's shiny new 256-bit AES. Attached: a badger photo. The gag — they encrypted the flag
 properly, then wrote the password directly in the email body (*"Definitely not the password:
 honeybadger4lyfe"*). The flag is an OpenSSL blob tucked in the JPEG's EXIF `Comment`; read the

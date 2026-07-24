@@ -91,6 +91,6 @@ the space. The coordinates live in the layout — the real gate is doing the pag
 
 ## Running it
 
-Hand out `participant/`; drive the session from `facilitator/`. Release the Warehouse's two
-optional hints in order if a team stalls. Every challenge has a `solve_test.sh` that solves
+Hand out `participant/`; drive the session from `facilitator/`. Release the optional hints (lvl 2
+and the Warehouse each ship two, in order) if a team stalls. Every challenge has a `solve_test.sh` that solves
 from the player files and asserts the flag, so you can prove the set works before the event.

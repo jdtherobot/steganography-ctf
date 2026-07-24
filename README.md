@@ -38,4 +38,4 @@ The Warehouse's cipher input is **line 9 of the document you recover in lvl 2**,
 
 An authorized, self-contained educational exercise operating only on supplied local files. It
 does not touch third-party systems, live services, or real credentials; password recovery
-applies solely to deliberately planted CTF secrets using author-provided wordlists.
+applies solely to deliberately planted CTF secrets using standard, publicly available wordlists.

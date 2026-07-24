@@ -1,7 +1,7 @@
 # Strings that must NEVER appear under participant/ (final answers / creator-only secrets).
 # NOTE: intended in-story leaks are allowed and are deliberately NOT listed here —
 #   honeybadger4lyfe  (leaked in the lvl-1 email body by design)
-#   password123       (crackable-by-design; lives only inside the shipped wordlist)
+#   password123       (crackable-by-design; a common wordlist entry, e.g. rockyou — players supply their own)
 Flag{H0NeyB4d6er10OKinG0OD!!!}
 Flag{DanG 7hat'S @ cUTe HOnEY b@D9eR}
 Flag{TOMHANKSAINTGOTSHITONME}

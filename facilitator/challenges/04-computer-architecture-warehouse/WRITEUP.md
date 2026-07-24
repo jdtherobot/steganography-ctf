@@ -1,6 +1,6 @@
 # Challenge 4 · Computer Architecture Warehouse — Facilitator Writeup
 
-**FACILITATOR ONLY — contains the flag. Never hand to players.**
+**FACILITATOR ONLY — contains the flag and every secret. Never hand to players.**
 
 | | |
 |---|---|

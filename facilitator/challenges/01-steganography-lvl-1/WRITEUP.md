@@ -1,6 +1,6 @@
 # Challenge 1 · Steganography lvl 1 — Facilitator Writeup
 
-**FACILITATOR ONLY — contains the flag and setup. Never hand to players.**
+**FACILITATOR ONLY — contains the flag and every secret. Never hand to players.**
 
 | | |
 |---|---|

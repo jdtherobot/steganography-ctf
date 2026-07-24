@@ -52,7 +52,10 @@ Full walk + the four-square decode in the Warehouse WRITEUP.
 
 - **lvl 1 & lvl 3** — hints are woven into the challenge itself (the email body; the lvl-3
   narration). No separate hint files.
-- **lvl 2** — no hint files; players can reach `password123` (guess or rockyou) on their own.
+- **lvl 2** — two optional hints in `participant/…/02-…/hints/` (release in order): (1) *"WE WILL,
+  WE WILL…"* — a nudge toward the right wordlist (*We Will Rock You* → `rockyou`); then (2) *"try
+  common password lists / stego tools."* The wordlist is **not** shipped — players supply their own
+  (e.g. `rockyou`) or simply guess `password123`.
 - **Warehouse** — two optional hints ship in `participant/…/04-…/hints/` (release in order):
   (1) *"have you beaten lvl 2?"*, then (2) the VA bit-split.
 

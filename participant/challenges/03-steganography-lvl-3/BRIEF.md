@@ -1,7 +1,5 @@
 # Challenge 3 · Steganography lvl 3
 
-**Your file:** `Honey.jpeg`
-
 Well now… this here's a simple one, leastways it looks that way.
 Just one lonely JPEG, sittin' there waitin' to be picked over.
 Your job's plain enough — find the flag.
@@ -33,6 +31,6 @@ And if you peeked at John's old notebook, you'd see one of his patterns scribble
 Well, I hope ya enjoyed an old man's tale about puzzles, little suffixes, and how sometimes the smallest patterns can open the biggest doors.
 So go on now. The JPEG's waitin'.
 
----
+**File:** `Honey.jpeg`
 
-**Flag format:** `Flag{...}` — submit it exactly.
+**Flag format:** `Flag{...}`

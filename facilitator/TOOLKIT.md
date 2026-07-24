@@ -17,7 +17,7 @@ install it.
 | **openssl** | encryption / decryption | `openssl version` |
 | **steghide** | hide/extract a file inside a JPEG behind a passphrase | `steghide --version` |
 | **stegcracker** *(or **stegseek**)* | crack a weak steghide passphrase with a wordlist | `stegcracker --help` |
-| **a wordlist** | `rockyou.txt` — shipped with this challenge / on Kali under `/usr/share/wordlists/` | `wc -l rockyou.txt` |
+| **a wordlist** | `rockyou.txt` — standard, on Kali under `/usr/share/wordlists/`. **Players supply their own — it is not shipped in `participant/`.** | `wc -l rockyou.txt` |
 | **binwalk** | scan a file for embedded files and their offsets | `binwalk --help` |
 | **dd** | byte-precise carving | `dd --version` |
 | **zip / unzip** | archive tools | `unzip -v` |

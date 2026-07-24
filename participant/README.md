@@ -36,7 +36,7 @@ solving Challenge 2, so do **lvl 2 before the Warehouse**. The rest stand on the
 - **In-story clues are fair game.** If an email body, a file, or a note seems to be
   *telling* you something — a password, a line number, a keyword — that's intentional.
 - **Don't brute-force the flag format.** Recover flags from the files, not by guessing.
-- **Stuck?** Each challenge has optional hints in its `hints/` folder, and your
+- **Stuck?** Some challenges include optional hints in a `hints/` folder, and your
   facilitator can give you more.
 
 Good hunting.

@@ -34,8 +34,9 @@ already holding key material for lvl 3.
 ## ① Steganography lvl 1
 
 An intercepted email from the *"Commander, 256 AES"* to *"Mr. Tema,"* gushing about the
-squadron's shiny new 256-bit AES. Attached: a badger photo. The gag — they encrypted the flag
-properly, then wrote the password directly in the email body (*"Definitely not the password:
+squadron's shiny new 256-bit AES. Attached: the squadron's group photo, saved as
+`badger_photo.jpeg` — no badger in frame. The gag — they encrypted the flag properly, then
+wrote the password directly in the email body (*"Definitely not the password:
 honeybadger4lyfe"*). The flag is an OpenSSL blob tucked in the JPEG's EXIF `Comment`; read the
 comment, decrypt with the leaked password.
 
@@ -46,10 +47,11 @@ exiftool -b -Comment badger_photo.jpeg | openssl enc -aes-256-cbc -d -pbkdf2 -a 
 
 ## ② Steganography lvl 2
 
-A second badger photo with a file embedded by **steghide** behind a weak passphrase. Crack it
-with a wordlist (`password123`), extract, and the flag is line 1 of a 202-line document. The
-rest of that document is not just noise — line 9 is the Warehouse's ciphertext, and its 201
-filler strings are lvl 3's key material.
+The set's first actual badger — a honey badger in a stegosaurus costume — with a file
+embedded by **steghide** behind a weak passphrase. Crack it with a wordlist (`password123`),
+extract, and the flag is line 1 of a 202-line document. The rest of that document is not just
+noise — line 9 is the Warehouse's ciphertext, and its 201 filler strings are lvl 3's key
+material.
 
 ```
 stegcracker stego_badger.jpeg rockyou.txt   →  password123

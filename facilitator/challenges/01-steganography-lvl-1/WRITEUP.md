@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Technique | EXIF `Comment` carrying an OpenSSL-encrypted blob; password leaked in the email body |
-| Distributable | `email.eml` (with the badger photo attached) |
+| Distributable | `email.eml` (with the squadron's group photo attached as `badger_photo.jpeg` — no badger in frame) |
 | Password | `honeybadger4lyfe` — leaked in the body **by design** |
 | Flag | `Flag{H0NeyB4d6er10OKinG0OD!!!}` |
 | Tools | `exiftool`, `openssl` (+ any mail client / `python3` to pull the attachment) |

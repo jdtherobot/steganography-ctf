@@ -6,7 +6,7 @@
 |---|---|
 | Puzzle | x86-64 page-table walk → physical warehouse box → four-square cipher |
 | Input | `VA = 0x0000_0100_4040_1005` (in the player memo) |
-| Location | Row 2 / Shelf 1 (bottom) / Section 2 (back) / Sub-section 1 / Box 5 |
+| Location | Row 1 / Bay 2 (back) / Shelf 1 (bottom) / Sub-section 2 / Box 5 |
 | Ciphertext | line 9 of the lvl-2 document: `UPNAHLNSIBESOLTUEBUPDNEY` |
 | Flag | `Flag{TOMHANKSAINTGOTSHITONME}` (verified) |
 
@@ -24,13 +24,16 @@ Equivalent mask/shift: `(VA>>39)&0x1FF=2`, `(VA>>30)&0x1FF=1`, `(VA>>21)&0x1FF=2
 
 | Level | Value | Coordinate |
 |---|---|---|
-| L1 / PML4 | 2 | **Row 2** |
-| L2 / PDPT | 1 | **Shelf level 1** (bottom) |
-| L3 / PD | 2 | **Section 2** (front=1, back=2) |
-| L4 / PT | 1 | **Sub-section 1** |
+| L1 / PT | 1 | **Row 1** |
+| L2 / PD | 2 | **Bay 2** (front=1, back=2) |
+| L3 / PDPT | 1 | **Shelf level 1** (bottom) |
+| L4 / PML4 | 2 | **Sub-section 2** |
 | Offset | 5 | **Box 5** |
 
-Geometry: 10 rows × 3 shelf levels × 2 sections × 8 sub-sections × 7 boxes = **3,360 boxes**
+Level numbers are the document's (Level 4 = the top 9 bits — what the MMU walks first);
+on the floor you walk them L1 → L4 (row → bay → shelf → sub-section), big structure to small.
+
+Geometry: 10 rows × 3 shelf levels × 2 bays × 8 sub-sections × 7 boxes = **3,360 boxes**
 (56 spokes per grate = 8 sub-sections of 7).
 
 ## The note (earned at the box)

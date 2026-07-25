@@ -28,7 +28,7 @@ lines — so make sure lvl 2 is solved first (the Warehouse's own hint says as m
 The puzzle resolves a virtual address to one physical box. Two ways to run it:
 
 - **In-person:** place the note (`challenges/04-computer-architecture-warehouse/assets/warehouse_note.png`)
-  in the correct box — **Row 2 / Shelf 1 (bottom) / Section 2 (back) / Sub-section 1 / Box 5**.
+  in the correct box — **Row 1 / Bay 2 (back) / Shelf 1 (bottom) / Sub-section 2 / Box 5**.
 - **Remote:** players use the companion warehouse game (the `jd-ctf-environment` repo / site);
   it mirrors the same note and geometry.
 
@@ -39,13 +39,16 @@ physical space / game embeds:
 
 | Level | Meaning |
 |---|---|
-| L1 / PML4 | Row (1–10) |
-| L2 / PDPT | Shelf level (bottom = 1 → top = 3) |
-| L3 / PD | Section (front = 1, back = 2) |
-| L4 / PT | Sub-section of the grate (8 sub-sections of 7; 56 spokes per grate) |
+| L1 / PT | Row (1–10) |
+| L2 / PD | Bay (front = 1, back = 2) |
+| L3 / PDPT | Shelf level (bottom = 1 → top = 3) |
+| L4 / PML4 | Sub-section of the grate (8 sub-sections of 7; 56 spokes per grate) |
 | Offset | Box within the sub-section (the page frame) |
 
-`VA = 0x0000_0100_4040_1005` → **Row 2 / Shelf 1 / Section 2 / Sub-section 1 / Box 5.**
+Level numbers follow the page-table document (Level 4 = the top 9 bits — what the MMU
+walks first); on the floor you walk them L1 → L4, big structure to small.
+
+`VA = 0x0000_0100_4040_1005` → **Row 1 / Bay 2 (back) / Shelf 1 (bottom) / Sub-section 2 / Box 5.**
 Full walk + the four-square decode in the Warehouse WRITEUP.
 
 ## Hints

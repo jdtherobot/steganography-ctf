@@ -77,8 +77,10 @@ chain is verified end-to-end against the author's original carrier.)*
 
 You are the MMU. Your TLB is empty, so you must walk a page table to resolve
 `VA = 0x0000_0100_4040_1005` into a physical box in a memory warehouse. Split the low 48 bits
-into `[PML4 9][PDPT 9][PD 9][PT 9][OFFSET 12]` → `2·1·2·1·5` → Row 2 / Shelf 1 / Section 2 /
-Sub-section 1 / Box 5. In the box is a hand-drawn note: four corner words (Honey / Badger /
+into `[PML4 9][PDPT 9][PD 9][PT 9][OFFSET 12]` → `2·1·2·1·5`, then pair each level *number*
+with its coordinate — L1/PT → row, L2/PD → bay, L3/PDPT → shelf, L4/PML4 → sub-section —
+giving Row 1 / Bay 2 (back) / Shelf 1 (bottom) / Sub-section 2 / Box 5. In the box is a
+hand-drawn note: four corner words (Honey / Badger /
 Heck / Yeah), *"dCode ▢▢▢▢"*, and *"Line #9."* That's a **four-square cipher** (all four squares
 keyed) applied to line 9 of the lvl-2 document:
 

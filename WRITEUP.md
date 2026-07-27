@@ -4,9 +4,9 @@
 > This explains **every** challenge end to end, including the flags. To *play*, stop here and
 > grab [`participant/`](participant/) instead.
 
-A four-challenge CTF built around a running joke: a comms unit that is very good at hiding
-things and very bad at keeping secrets. You pull ciphertext out of a photo's metadata, crack a
-hidden message, take apart one JPEG that is secretly several files, and — for the real nerds —
+A four-challenge CTF spanning steganography, cryptography, file carving, metadata forensics,
+and computer architecture. You pull ciphertext out of a photo's metadata, crack a hidden
+message, carve one JPEG into its stacked payloads and unwind three layers of encryption, and
 walk a virtual address through the page tables to a physical box in a warehouse. Every flag
 looks like `Flag{…}`.
 
@@ -33,12 +33,12 @@ already holding key material for lvl 3.
 
 ## ① Steganography lvl 1
 
-An intercepted email from the *"Commander, 256 AES"* to *"Mr. Tema,"* gushing about the
-squadron's shiny new 256-bit AES. Attached: the squadron's group photo, saved as
-`badger_photo.jpeg` — no badger in frame. The gag — they encrypted the flag properly, then
-wrote the password directly in the email body (*"Definitely not the password:
-honeybadger4lyfe"*). The flag is an OpenSSL blob tucked in the JPEG's EXIF `Comment`; read the
-comment, decrypt with the leaked password.
+An intercepted email from *"Commander, 256 AES"* to *"Mr. Tema"* about the squadron's new
+256-bit AES, with a group photo attached (`badger_photo.jpeg`). The flag is encrypted
+correctly, but the password is written into the email body (*"Definitely not the password:
+honeybadger4lyfe"*) — the weak point is password hygiene, not the crypto. The flag is an
+OpenSSL blob in the JPEG's EXIF `Comment`; read the comment and decrypt with the leaked
+password.
 
 ```
 exiftool -b -Comment badger_photo.jpeg | openssl enc -aes-256-cbc -d -pbkdf2 -a -k honeybadger4lyfe
@@ -47,11 +47,10 @@ exiftool -b -Comment badger_photo.jpeg | openssl enc -aes-256-cbc -d -pbkdf2 -a 
 
 ## ② Steganography lvl 2
 
-The set's first actual badger — a honey badger in a stegosaurus costume — with a file
-embedded by **steghide** behind a weak passphrase. Crack it with a wordlist (`password123`),
-extract, and the flag is line 1 of a 202-line document. The rest of that document is not just
-noise — line 9 is the Warehouse's ciphertext, and its 201 filler strings are lvl 3's key
-material.
+A JPEG with a file embedded by **steghide** behind a weak passphrase. Crack it with a wordlist
+(`password123`), extract, and the flag is line 1 of a 202-line document. The rest of that
+document isn't filler: line 9 is the Warehouse's ciphertext, and the 201 remaining strings are
+lvl 3's key material.
 
 ```
 stegcracker stego_badger.jpeg rockyou.txt   →  password123
@@ -60,7 +59,7 @@ steghide extract -sf stego_badger.jpeg -p password123 -xf doc.txt   →  line 1:
 
 ## ③ Steganography lvl 3
 
-One JPEG — `Honey.jpeg` — that is secretly several files stacked together, wrapped in layers
+One JPEG — `Honey.jpeg` — that holds several more files stacked behind it, wrapped in layers
 of encryption, with a stego-hidden AES key and a couple of decoys. `binwalk` reveals the
 seams; you carve the pieces, open a weakly-encrypted bundle, use its helper to pull an AES key
 hidden in a JPEG's **quantization tables**, and unwind the inner layers to the flag.
@@ -70,8 +69,7 @@ narration (a tale about *"John,"* from the Desert Storm days, and his friends *A
 and Kernighan* → `awk`) teaches you to *build* the password: a codename, a `#`, two digits, and
 a three-letter mixed-case tag — mask `?d?d?l?u?l`.
 
-*(Full carve-and-decrypt chain and the exact flag are in the facilitator writeup; the whole
-chain is verified end-to-end against the author's original carrier.)*
+*(Full carve-and-decrypt chain and the exact flag are in the facilitator writeup.)*
 
 ## ④ Computer Architecture Warehouse
 

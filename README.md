@@ -1,9 +1,8 @@
 # Steganography CTF
 
 A four-challenge capture-the-flag covering steganography, cryptography, file carving,
-metadata forensics, and a little computer architecture. Every challenge, image, payload,
-password, and flag here is **author-created and author-owned**, and everything runs on
-supplied local files.
+metadata forensics, and a little computer architecture. I created and own every challenge,
+image, payload, password, and flag here, and everything runs on supplied local files.
 
 > ### ⚠️ Spoilers
 > - **Playing?** Stay in [`participant/`](participant/) — nothing there spoils anything.
@@ -14,7 +13,7 @@ supplied local files.
 | Folder | Who it's for | What's in it |
 |---|---|---|
 | **[`participant/`](participant/)** | Players | The challenge files, a spoiler-free brief per challenge, and optional hints. **Hand this folder to participants as-is.** |
-| **[`facilitator/`](facilitator/)** | Whoever runs it | Flags, full walkthroughs (author's own setup + solve steps), the printable warehouse note, per-challenge solver tests, a tool checklist, and run-day logistics. |
+| **[`facilitator/`](facilitator/)** | Whoever runs it | Flags, full walkthroughs (my setup + solve steps), the printable warehouse note, per-challenge solver tests, a tool checklist, and run-day logistics. |
 
 ## The challenges
 

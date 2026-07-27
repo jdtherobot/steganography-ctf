@@ -41,7 +41,8 @@ is Kali's `rockyou`, which the hint "WE WILL, WE WILL…" points at.)*
 
 ## The cross-challenge tie (do NOT reveal to players)
 
-The extracted document is load-bearing beyond line 1:
+The extracted document matters beyond line 1 (the challenges can be solved in any order, but
+having lvl 2's document in hand makes the Warehouse and lvl 3 easier):
 - **Line 9** (`UPNAHLNSIBESOLTUEBUPDNEY`) is the **Computer Architecture Warehouse**
   four-square ciphertext.
 - The **201 filler strings** (lines 2–202) are the same 24-character records that make

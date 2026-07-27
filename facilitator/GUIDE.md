@@ -62,8 +62,9 @@ Full walk + the four-square decode in the Warehouse WRITEUP.
 - **Warehouse** — two optional hints ship in `participant/…/04-…/hints/` (release in order):
   (1) *"have you beaten lvl 2?"*, then (2) the VA bit-split.
 
-## Provenance
+## Origin
 
-Every challenge, image, payload, password, and flag here is author-created and author-owned.
-The player-facing text is exactly what participants received in the original event; the
-setup/solve walkthroughs are the author's own.
+I created and own every challenge, image, payload, password, and flag here. The player-facing
+text is what participants received when I ran this; the setup and solve walkthroughs are mine.
+These four challenges are my own work, updated and revised from a live CTF I co-designed and
+ran in October 2025 (originally hosted on CTFd).

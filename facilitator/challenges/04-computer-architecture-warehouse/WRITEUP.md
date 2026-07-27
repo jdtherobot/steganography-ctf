@@ -8,7 +8,7 @@
 | Input | `VA = 0x0000_0100_4040_1005` (in the player memo) |
 | Location | Row 1 / Bay 2 (back) / Shelf 1 (bottom) / Sub-section 2 / Box 5 |
 | Ciphertext | line 9 of the lvl-2 document: `UPNAHLNSIBESOLTUEBUPDNEY` |
-| Flag | `Flag{TOMHANKSAINTGOTSHITONME}` (verified) |
+| Flag | `Flag{TOMHANKSAINTGOTSHITONME}` |
 
 ## The walk
 
@@ -50,7 +50,7 @@ Heck                  Yeah
 - **Line #9** → line 9 of the Steganography lvl 2 document: `UPNAHLNSIBESOLTUEBUPDNEY`.
 - The 2×2 layout *is* the grid diagram — each corner word keys the square in that corner.
 
-## The four-square (verified configuration)
+## The four-square (working configuration)
 
 All four 5×5 squares are keyed (I/J merged, `J→I`), corner word → corner square:
 
@@ -84,6 +84,6 @@ PT:  TO MH AN KS AI NT GO TS HI TO NM EZ
 **Flag:** `Flag{TOMHANKSAINTGOTSHITONME}` — "TOM HANKS AINT GOT SHIT ON ME".
 Graders may also accept the bare/spaced plaintext.
 
-> Verified in-sandbox: this is the configuration that decodes the ciphertext (the
-> standard two-keyed-square four-square does **not**; the note's four corner words are
-> the tell that all four squares are keyed).
+> This is the configuration that decodes the ciphertext: the standard two-keyed-square
+> four-square does **not**; the note's four corner words are the tell that all four squares
+> are keyed.

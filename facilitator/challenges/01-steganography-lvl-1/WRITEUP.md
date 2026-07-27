@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | Technique | EXIF `Comment` carrying an OpenSSL-encrypted blob; password leaked in the email body |
-| Distributable | `email.eml` (with the squadron's group photo attached as `badger_photo.jpeg` — no badger in frame) |
+| Distributable | `email.eml` (with the squadron's group photo attached as `badger_photo.jpeg`) |
 | Password | `honeybadger4lyfe` — leaked in the body **by design** |
 | Flag | `Flag{H0NeyB4d6er10OKinG0OD!!!}` |
 | Tools | `exiftool`, `openssl` (+ any mail client / `python3` to pull the attachment) |
@@ -49,5 +49,5 @@
   the nudge toward AES-256.
 - The generator line `PASSWORD='honeybadger4l'yfe` renders in the shell as
   `honeybadger4lyfe` (the apostrophe closes the quote); the shipped body and the
-  working decrypt both use `honeybadger4lyfe`. Verified end-to-end.
+  working decrypt both use `honeybadger4lyfe`.
 - Common pitfalls: forgetting `-pbkdf2` (→ `bad decrypt`) or `-a` (base64 input).

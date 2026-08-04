@@ -34,14 +34,14 @@ already holding key material for lvl 3.
 ## ① Steganography lvl 1
 
 An intercepted email from *"Commander, 256 AES"* to *"Mr. Tema"* about the squadron's new
-256-bit AES, with a group photo attached (`badger_photo.jpeg`). The flag is encrypted
+256-bit AES, with a group photo attached (`secretphoto.jpeg`). The flag is encrypted
 correctly, but the password is written into the email body (*"Definitely not the password:
 honeybadger4lyfe"*) — the weak point is password hygiene, not the crypto. The flag is an
 OpenSSL blob in the JPEG's EXIF `Comment`; read the comment and decrypt with the leaked
 password.
 
 ```
-exiftool -b -Comment badger_photo.jpeg | openssl enc -aes-256-cbc -d -pbkdf2 -a -k honeybadger4lyfe
+exiftool -b -Comment secretphoto.jpeg | openssl enc -aes-256-cbc -d -pbkdf2 -a -k honeybadger4lyfe
 → Flag{H0NeyB4d6er10OKinG0OD!!!}
 ```
 

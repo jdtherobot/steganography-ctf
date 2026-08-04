@@ -8,24 +8,24 @@ Content-Type: multipart/mixed; boundary="----ctf-boundary-001"
 ------ctf-boundary-001
 Content-Type: text/plain; charset=UTF-8
 
-Hi Mr. Tem,
+Hi Mr. Tema,
 
 Heres that secret photo I was telling you about. Some nerd from the intelligence agency showed me how to do this - now we can hide whatever we want right in a photo!  Below is the password. I mean uhh.. totally not the password ;)
 
-On an unrelated note, my doctor keeps telling me I should stop trying to make my brain stronger by hitting it with a hammer, but I think he’s a dummy.  My brains like twice as big as his probably.  Anywho.  Definitely not the password: honeybadger4lyfe
+On an unrelated note, my doctor keeps telling me I should stop trying to make my brain stronger by hitting it with a hammer, but I think he’s a dummy.  My brains like twice as big as his probably.  Anywho.
+
+Definitely not the password: honeybadger4lyfe
 
 Rock on,
 
-The CO, 256 AES
+Comander
 256 Air Expeditionary Squadron (256 AES)
 
 
-I am legally required to say that this is not a sponsored message.
-
 ------ctf-boundary-001
-Content-Type: image/jpeg; name="badger_photo.jpeg"
+Content-Type: image/jpeg; name="secretphoto.jpeg"
 Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename="badger_photo.jpeg"
+Content-Disposition: attachment; filename="secretphoto.jpeg"
 
 /9j/4Q/+RXhpZgAATU0AKgAAAAgABgESAAMAAAABAAEAAAEaAAUAAAABAAAAVgEb
 AAUAAAABAAAAXgEoAAMAAAABAAIAAAITAAMAAAABAAEAAIdpAAQAAAABAAAAZgAA

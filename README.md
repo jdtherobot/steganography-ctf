@@ -24,9 +24,6 @@ image, payload, password, and flag here, and everything runs on supplied local f
 | 3 | **Steganography lvl 3** | Carve one JPEG into stacked payloads, reason out a password, and peel back the encryption. | — |
 | 4 | **Computer Architecture Warehouse** | Walk a virtual address through the page tables to a physical box, then break a four-square cipher. | lvl 2 |
 
-The Warehouse's cipher input is **line 9 of the document you recover in lvl 2**, so
-**solve lvl 2 before the Warehouse.**
-
 ## Companion
 
 - **[WRITEUP.md](WRITEUP.md)** — the full illustrated writeup, all four challenges end to end *(spoilers)*.

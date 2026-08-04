@@ -25,8 +25,8 @@ solvable offline with the files in this folder and a standard forensics toolkit.
 | 3 | **Steganography lvl 3** | Take apart one JPEG with multiple layers of cryptography to get through. |
 | 4 | **Computer Architecture Warehouse** | Walk a virtual address through the page tables to a physical box, then crack the cipher you find. |
 
-**Order matters for the Warehouse.** That challenge uses something you recover while
-solving Challenge 2, so completing lvl 2 before the Warehouse makes it much easier. The rest stand on their own.
+**Order matters**  
+Challenge 3 (Steganography lvl 3) and Challenge 4 (Warehouse) both use things that you can recover from Challenge 2 (Steganography lvl 2), so completing them in order makes them much easier.
 
 ## Flags & rules
 
